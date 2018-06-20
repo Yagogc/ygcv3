@@ -41,12 +41,21 @@ const Button = styled("a")`
   &:after {
     content: "";
     position: absolute;
-    background: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
     top: 0;
     left: 0;
     height: 300%;
-    width: 10px;
-    transform: rotate(45deg) translateY(-50%);
+    width: 30px;
+    transform: rotate(45deg) translateY(-50%) translateX(-335%);
     transform-origin: center;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover:after {
+    transform: rotate(45deg) translateY(-50%) translateX(335%);
   }
 `;

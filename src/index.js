@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
-import { injectGlobal } from "styled-components";
+import { injectGlobal } from "react-emotion";
 import color from "./styles/colors";
 
 ReactDOM.render(<App />, document.getElementById("root"));

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "react-emotion";
 import color from "./../styles/colors";
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
 
 export default Header;
 
-const Wrapper = styled.header`
+const Wrapper = styled("header")`
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@ const Wrapper = styled.header`
   justify-content: space-between;
 `;
 
-const Button = styled.a`
+const Button = styled("a")`
   height: 100%;
   display: flex;
   align-items: center;

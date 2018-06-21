@@ -4,6 +4,9 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import { injectGlobal } from "react-emotion";
 import color from "./styles/colors";
+import Typography from "./styles/Typography";
+
+Typography();
 
 ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();

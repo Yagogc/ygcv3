@@ -12,7 +12,8 @@ injectGlobal`
 	* {
 		margin: 0;
 		padding: 0;
-		box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   }
   html {
     background: ${color.ui1};

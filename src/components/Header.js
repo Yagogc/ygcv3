@@ -19,12 +19,13 @@ const Wrapper = styled("header")`
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 60px;
   background: ${color.ui4};
   color: ${color.text1};
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: inset 0 -1px 0px 0px rgba(255, 255, 255, 0.1);
 `;
 
 const Button = styled("a")`
@@ -37,6 +38,7 @@ const Button = styled("a")`
   background: linear-gradient(135deg, ${color.brand3} 0%, ${color.brand4} 100%);
   overflow: hidden;
   position: relative;
+  box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.4);
 
   &:after {
     content: "";
@@ -53,9 +55,9 @@ const Button = styled("a")`
     width: 30px;
     transform: rotate(45deg) translateY(-50%) translateX(-335%);
     transform-origin: center;
-    transition: all 0.3s ease-in-out;
   }
   &:hover:after {
     transform: rotate(45deg) translateY(-50%) translateX(335%);
+    transition: all 0.3s ease-in-out;
   }
 `;

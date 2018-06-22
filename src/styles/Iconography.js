@@ -1,8 +1,15 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFilePdf,
+  faHome,
+  faCode,
+  faBriefcase,
+  faGraduationCap,
+  faCubes
+} from "@fortawesome/free-solid-svg-icons";
 
 const Iconography = () => {
-  library.add(faFilePdf);
+  library.add(faFilePdf, faHome, faCode, faBriefcase, faGraduationCap, faCubes);
 };
 
 export default Iconography;

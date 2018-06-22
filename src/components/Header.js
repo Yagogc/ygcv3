@@ -5,10 +5,7 @@ import color from "./../styles/colors";
 const Header = () => {
   return (
     <Wrapper>
-      <Logo>
-        <Span>Yago </Span>
-        <Span>Gonzalez</Span>
-      </Logo>
+      <span>Yago Gonzalez</span>
       <nav>navigation</nav>
       <Button href="#">Button CV</Button>
     </Wrapper>
@@ -17,21 +14,6 @@ const Header = () => {
 
 export default Header;
 
-const Logo = styled("div")`
-  display: flex;
-`;
-const Span = styled("span")`
-  font-size: 30px;
-  font-family: "Trade Winds";
-  position: relative;
-  font-variant: small-caps;
-  transform: skew(-15deg, -15deg);
-  background-image: -webkit-linear-gradient(#ff0ff8 0%, #f9f9f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
-  -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
-`;
 const Wrapper = styled("header")`
   position: fixed;
   top: 0;

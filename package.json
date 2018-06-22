@@ -6,7 +6,6 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
     "@fortawesome/react-fontawesome": "0.1.0-11",
-    "babel-plugin-emotion": "^9.2.0",
     "emotion": "^9.2.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -17,14 +16,16 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "prettier": "^1.13.5"
+    "prettier": "^1.13.5",
+    "react-app-rewire-emotion": "^4.0.0",
+    "react-app-rewired": "^1.5.2"
   }
 }

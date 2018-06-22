@@ -19,7 +19,7 @@ const Header = () => {
 
 export default Header;
 
-const Wrapper = styled("header")`
+const Wrapper = styled.header`
   position: fixed;
   top: 0;
   left: 0;
@@ -33,7 +33,7 @@ const Wrapper = styled("header")`
   box-shadow: inset 0 -1px 0px 0px rgba(255, 255, 255, 0.1);
 `;
 
-const Button = styled("a")`
+const Button = styled.a`
   height: 100%;
   display: flex;
   align-items: center;

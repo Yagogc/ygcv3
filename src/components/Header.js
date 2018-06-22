@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "react-emotion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import color from "./../styles/colors";
+import Icon from "../styles/Icon";
 
 const Header = () => {
   return (
@@ -18,10 +18,6 @@ const Header = () => {
 };
 
 export default Header;
-
-const Icon = styled(FontAwesomeIcon)`
-  margin-right: 5px;
-`;
 
 const Wrapper = styled("header")`
   position: fixed;

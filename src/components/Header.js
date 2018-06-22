@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "react-emotion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import color from "./../styles/colors";
 
 const Header = () => {
@@ -7,12 +9,19 @@ const Header = () => {
     <Wrapper>
       <span>Yago Gonzalez</span>
       <nav>navigation</nav>
-      <Button href="#">Button CV</Button>
+      <Button href="#">
+        <Icon icon="file-pdf" />
+        CV
+      </Button>
     </Wrapper>
   );
 };
 
 export default Header;
+
+const Icon = styled(FontAwesomeIcon)`
+  margin-right: 5px;
+`;
 
 const Wrapper = styled("header")`
   position: fixed;
@@ -58,6 +67,6 @@ const Button = styled("a")`
   }
   &:hover:after {
     transform: rotate(45deg) translateY(-50%) translateX(335%);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 `;

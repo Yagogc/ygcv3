@@ -3,12 +3,13 @@ import styled from "react-emotion";
 
 import color from "./../styles/colors";
 import Icon from "../styles/Icon";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
     <Wrapper>
       <span>Yago Gonzalez</span>
-      <nav>navigation</nav>
+      <Navigation />
       <Button href="#">
         <Icon icon="file-pdf" />
         CV

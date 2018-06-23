@@ -47,6 +47,9 @@ const Wrapper = styled.nav`
     right: 0;
     height: 60px;
     justify-content: space-between;
+    background: ${props => props.theme.color.ui4};
+    color: ${color.text1};
+    box-shadow: inset 0 1px 0px 0px rgba(255, 255, 255, 0.1);
   }
 `;
 

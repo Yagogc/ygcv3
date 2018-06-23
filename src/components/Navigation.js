@@ -1,29 +1,33 @@
 import React from "react";
 import styled from "react-emotion";
-import { Link as LinkC } from "react-router-dom";
+import { Link as LinkC, withRouter } from "react-router-dom";
 import color from "./../styles/colors";
 import Icon from "../styles/Icon";
 
-const Navigation = () => {
+const isActive = (path, currentPath) =>
+  path === currentPath ? "true" : undefined;
+
+const Navigation = props => {
+  const { pathname } = props.location;
   return (
     <Wrapper>
-      <Link to="/">
+      <Link to="/" current={isActive("/", pathname)}>
         <Icon icon="home" />
         <LinkTitle>Home</LinkTitle>
       </Link>
-      <Link to="/skills">
+      <Link to="/skills" current={isActive("/skills", pathname)}>
         <Icon icon="code" />
         <LinkTitle>Skills</LinkTitle>
       </Link>
-      <Link to="/work">
+      <Link to="/work" current={isActive("/work", pathname)}>
         <Icon icon="briefcase" />
         <LinkTitle>Work</LinkTitle>
       </Link>
-      <Link to="/education">
+      <Link to="/education" current={isActive("/education", pathname)}>
         <Icon icon="graduation-cap" />
         <LinkTitle>Education</LinkTitle>
       </Link>
-      <Link to="/portfolio">
+      <Link to="/portfolio" current={isActive("/portfolio", pathname)}>
         <Icon icon="cubes" />
         <LinkTitle>Portfolio</LinkTitle>
       </Link>
@@ -31,7 +35,7 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default withRouter(Navigation);
 
 const Wrapper = styled.nav`
   height: 100%;
@@ -53,7 +57,7 @@ const Link = styled(LinkC)`
   z-index: 5;
 
   &:hover::after {
-    height: 100%;
+    height: 4px;
     top: 0;
     /* transform: translateY(0); */
     /* box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.4); */
@@ -61,7 +65,7 @@ const Link = styled(LinkC)`
   &:after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
     background: linear-gradient(
       135deg,
@@ -70,7 +74,7 @@ const Link = styled(LinkC)`
     );
     background-repeat: no-repeat;
     width: 100%;
-    height: 0;
+    height: ${props => (props.current ? "4px" : 0)};
     /* transform: translateY(50%); */
     transition: all 0.15s ease-in-out;
     z-index: 4;

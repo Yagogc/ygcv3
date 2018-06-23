@@ -29,17 +29,28 @@ const Introduction = styled.p`
   text-align: justify;
   display: inline-block;
   flex-grow: 2;
-  width: 66%;
+  @media (max-device-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media (min-device-width: 768px) {
+    width: 66%;
+  }
 `;
 
 const CardHome = styled(Card)`
   display: flex;
   align-items: center;
+  @media (max-device-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 const Logo = styled.div`
   flex-grow: 1;
-  width: 33%;
   text-align: center;
+
+  @media (min-device-width: 768px) {
+    width: 33%;
+  }
 `;
 
 const LogoImg = styled.img`

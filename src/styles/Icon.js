@@ -9,6 +9,5 @@ const Icon = props => {
 export default Icon;
 
 const IconWrapper = styled(FontAwesomeIcon)`
-  margin-right: 5px;
-  z-index: inherit;
+  ${"" /* margin-right: 5px; */} z-index: inherit;
 `;

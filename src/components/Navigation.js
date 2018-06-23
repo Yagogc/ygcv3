@@ -40,10 +40,25 @@ export default withRouter(Navigation);
 const Wrapper = styled.nav`
   height: 100%;
   display: flex;
+  @media (max-device-width: 768px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    justify-content: space-between;
+  }
 `;
 
 const LinkTitle = styled.span`
   z-index: 5;
+  margin-left: 5px;
+
+  @media (max-device-width: 768px) {
+    font-size: 11px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
 `;
 const Link = styled(LinkC)`
   color: ${color.text1};
@@ -55,12 +70,16 @@ const Link = styled(LinkC)`
   align-items: center;
   position: relative;
   z-index: 5;
-
+  @media (max-device-width: 768px) {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 20%;
+    font-size: 18px;
+    padding: 5px;
+  }
   &:hover::after {
     height: 4px;
     top: 0;
-    /* transform: translateY(0); */
-    /* box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.4); */
   }
   &:after {
     content: "";

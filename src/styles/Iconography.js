@@ -6,10 +6,27 @@ import {
   faBriefcase,
   faGraduationCap,
   faCubes
-} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/pro-light-svg-icons";
+import {
+  faFacebook,
+  faGithubAlt,
+  faLinkedinIn,
+  faGooglePlusG
+} from "@fortawesome/free-brands-svg-icons";
 
 const Iconography = () => {
-  library.add(faFilePdf, faHome, faCode, faBriefcase, faGraduationCap, faCubes);
+  library.add(
+    faFilePdf,
+    faHome,
+    faCode,
+    faBriefcase,
+    faGraduationCap,
+    faCubes,
+    faFacebook,
+    faGithubAlt,
+    faLinkedinIn,
+    faGooglePlusG
+  );
 };
 
 export default Iconography;

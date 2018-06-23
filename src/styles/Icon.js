@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "react-emotion";
 
 const Icon = props => {
-  return <IconWrapper icon={props.icon} />;
+  return <IconWrapper icon={["fal", props.icon]} />;
 };
 
 export default Icon;

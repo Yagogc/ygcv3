@@ -15,7 +15,7 @@ const Header = () => {
           <Navigation />
           <Button href="#">
             <Icon icon="file-pdf" />
-            CV
+            <span>CV</span>
           </Button>
         </InnerWrapper>
       </Container>
@@ -53,6 +53,10 @@ const Button = styled.a`
   position: relative;
   box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.4);
 
+  > span {
+    margin-left: 5px;
+    font-weight: bold;
+  }
   &:after {
     content: "";
     position: absolute;

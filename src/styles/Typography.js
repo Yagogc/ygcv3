@@ -12,8 +12,8 @@ const Typography = () => {
     classes: false,
     events: false,
     google: {
-      families: ["Trade Winds"],
-      text: "aeglnoyz"
+      families: ["Marck Script"],
+      text: "aeglnoyzGY"
     }
   });
 };

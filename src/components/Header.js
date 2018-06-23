@@ -4,16 +4,21 @@ import styled from "react-emotion";
 import color from "./../styles/colors";
 import Icon from "../styles/Icon";
 import Navigation from "./Navigation";
+import Container from "../styles/Container";
 
 const Header = () => {
   return (
     <Wrapper>
-      <span>Yago Gonzalez</span>
-      <Navigation />
-      <Button href="#">
-        <Icon icon="file-pdf" />
-        CV
-      </Button>
+      <Container horizontal header>
+        <InnerWrapper>
+          <span>Yago Gonzalez</span>
+          <Navigation />
+          <Button href="#">
+            <Icon icon="file-pdf" />
+            CV
+          </Button>
+        </InnerWrapper>
+      </Container>
     </Wrapper>
   );
 };
@@ -26,21 +31,23 @@ const Wrapper = styled.header`
   left: 0;
   width: 100%;
   height: 60px;
-  background: ${color.ui4};
+  background: ${props => props.theme.color.ui4};
   color: ${color.text1};
+  box-shadow: inset 0 -1px 0px 0px rgba(255, 255, 255, 0.1);
+`;
+const InnerWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: inset 0 -1px 0px 0px rgba(255, 255, 255, 0.1);
+  height: 100%;
 `;
-
 const Button = styled.a`
   height: 100%;
   display: flex;
   align-items: center;
   color: ${color.text1};
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px 20px;
   background: linear-gradient(135deg, ${color.brand3} 0%, ${color.brand4} 100%);
   overflow: hidden;
   position: relative;

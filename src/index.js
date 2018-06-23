@@ -25,6 +25,6 @@ injectGlobal`
     color: ${color.text1}
   }
   body {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 `;

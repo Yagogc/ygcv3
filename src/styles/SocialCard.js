@@ -32,6 +32,7 @@ export default withTheme(SocialCard);
 
 const CardWrapper = styled.a`
   width: 100%;
+  min-width: 175px;
   flex-grow: 1;
   display: flex;
   align-items: center;

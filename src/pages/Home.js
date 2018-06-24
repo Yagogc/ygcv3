@@ -65,7 +65,9 @@ const CardHome = styled(Card)`
 const CardSocial = styled(Card)`
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  @media (max-device-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 const Logo = styled.div`
   flex-grow: 1;

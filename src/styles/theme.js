@@ -18,6 +18,12 @@ const theme = {
   container: {
     width: "1200px",
     padding: "10px"
+  },
+  brands: {
+    facebook: "#3b5998",
+    google: "#FF5733",
+    github: "#6e5494",
+    linkedin: "#0077B5"
   }
 };
 

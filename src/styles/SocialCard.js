@@ -2,6 +2,7 @@ import React from "react";
 
 import styled from "react-emotion";
 import { withTheme } from "emotion-theming";
+import { darken } from "polished";
 
 import Icon from "./Icon";
 
@@ -42,7 +43,14 @@ const CardWrapper = styled.a`
   background: ${props => (props.brand ? props.brand : "none")};
   padding: ${props => (props.padded ? "10px" : 0)};
   margin: 10px;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0 0 0 2px
+    ${props => (props.brand ? darken(0.2, props.brand) : "none")};
+
+  &:hover {
+    background: ${props => (props.brand ? darken(0.2, props.brand) : "none")};
+    box-shadow: inset 0 0 0 2px ${props => (props.brand ? props.brand : "none")};
+  }
 `;
 
 const CardTitle = styled.span`

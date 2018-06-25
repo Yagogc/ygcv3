@@ -46,10 +46,10 @@ const Introduction = styled.p`
   text-align: justify;
   display: inline-block;
   flex-grow: 2;
-  @media (max-device-width: 768px) {
+  @media (max-width: 768px) {
     margin-bottom: 10px;
   }
-  @media (min-device-width: 768px) {
+  @media (min-width: 768px) {
     width: 66%;
   }
 `;
@@ -57,7 +57,7 @@ const Introduction = styled.p`
 const CardHome = styled(Card)`
   display: flex;
   align-items: center;
-  @media (max-device-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
@@ -65,7 +65,7 @@ const CardHome = styled(Card)`
 const CardSocial = styled(Card)`
   display: flex;
   align-items: center;
-  @media (max-device-width: 768px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
   }
 `;
@@ -73,7 +73,7 @@ const Logo = styled.div`
   flex-grow: 1;
   text-align: center;
 
-  @media (min-device-width: 768px) {
+  @media (min-width: 768px) {
     width: 33%;
   }
 `;

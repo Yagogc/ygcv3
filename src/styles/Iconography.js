@@ -7,7 +7,11 @@ import {
   faGraduationCap,
   faCubes,
   faUserCircle,
-  faFolder
+  faFolder,
+  faMapMarkerAlt,
+  faAt,
+  faCalendarAlt,
+  faPhone
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
@@ -29,7 +33,11 @@ const Iconography = () => {
     faLinkedinIn,
     faGooglePlusG,
     faUserCircle,
-    faFolder
+    faFolder,
+    faMapMarkerAlt,
+    faAt,
+    faCalendarAlt,
+    faPhone
   );
 };
 

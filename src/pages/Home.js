@@ -3,6 +3,7 @@ import Card from "./../styles/Card";
 import styled from "react-emotion";
 import logo from "../assets/logo.png";
 import SocialCard from "./../styles/SocialCard";
+import CardData from "./../styles/CardData";
 
 const Home = () => {
   return (
@@ -11,11 +12,27 @@ const Home = () => {
         <Logo>
           <LogoImg src={logo} alt="Logo" />
         </Logo>
-        <Introduction>
-          My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
-          specialized in HTML, CSS and JavaScript. I'm passionate about UX
-          design, responsive design and the latest web technologies.
-        </Introduction>
+        <Info>
+          <Introduction>
+            My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
+            specialized in HTML, CSS and JavaScript. I'm passionate about UX
+            design, responsive design and the latest web technologies.
+          </Introduction>
+          <Data>
+            <CardData padded icon="at">
+              info@yagogc.com
+            </CardData>
+            <CardData padded icon="map-marker-alt">
+              London, GB
+            </CardData>
+            <CardData padded icon="phone">
+              +44 7490 303306
+            </CardData>
+            <CardData padded icon="calendar-alt">
+              29/01/1988
+            </CardData>
+          </Data>
+        </Info>
       </CardHome>
       <CardSocial>
         <SocialCard padded icon="github-alt" color="github">
@@ -45,6 +62,18 @@ const Introduction = styled.p`
   line-height: 24px;
   text-align: justify;
   display: inline-block;
+  margin-bottom: 10px;
+`;
+const Data = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1em;
+  @media (${props => props.theme.mq.mobile}) {
+    grid-template-columns: auto auto;
+  }
+`;
+
+const Info = styled.div`
   flex-grow: 2;
   @media (${props => props.theme.mq.mobile}) {
     margin-bottom: 10px;

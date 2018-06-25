@@ -46,10 +46,10 @@ const Introduction = styled.p`
   text-align: justify;
   display: inline-block;
   flex-grow: 2;
-  @media (max-width: 768px) {
+  @media (${props => props.theme.mq.mobile}) {
     margin-bottom: 10px;
   }
-  @media (min-width: 768px) {
+  @media (${props => props.theme.mq.desktop}) {
     width: 66%;
   }
 `;
@@ -57,7 +57,7 @@ const Introduction = styled.p`
 const CardHome = styled(Card)`
   display: flex;
   align-items: center;
-  @media (max-width: 768px) {
+  @media (${props => props.theme.mq.mobile}) {
     flex-direction: column-reverse;
   }
 `;
@@ -65,7 +65,7 @@ const CardHome = styled(Card)`
 const CardSocial = styled(Card)`
   display: flex;
   align-items: center;
-  @media (max-width: 768px) {
+  @media (${props => props.theme.mq.mobile}) {
     flex-wrap: wrap;
   }
 `;
@@ -73,7 +73,7 @@ const Logo = styled.div`
   flex-grow: 1;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (${props => props.theme.mq.desktop}) {
     width: 33%;
   }
 `;

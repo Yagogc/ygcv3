@@ -1,6 +1,10 @@
 const theme = {
   borderRadius: "50%",
   borderColor: "#BF67AD",
+  mq: {
+    mobile: "max-width: 768px",
+    desktop: "min-width: 768px"
+  },
   color: {
     ui1: "#0e1122",
     ui2: "#151931",

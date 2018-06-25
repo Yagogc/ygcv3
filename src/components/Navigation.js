@@ -40,7 +40,7 @@ export default withRouter(Navigation);
 const Wrapper = styled.nav`
   height: 100%;
   display: flex;
-  @media (max-width: 768px) {
+  @media (${props => props.theme.mq.mobile}) {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -57,7 +57,7 @@ const LinkTitle = styled.span`
   z-index: 5;
   margin-left: 5px;
 
-  @media (max-width: 768px) {
+  @media (${props => props.theme.mq.mobile}) {
     font-size: 11px;
     margin-left: 0;
     margin-top: 5px;
@@ -73,7 +73,7 @@ const Link = styled(LinkC)`
   align-items: center;
   position: relative;
   z-index: 5;
-  @media (max-width: 768px) {
+  @media (${props => props.theme.mq.mobile}) {
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 20%;

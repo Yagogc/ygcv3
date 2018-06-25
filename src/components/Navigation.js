@@ -12,7 +12,7 @@ const Navigation = props => {
   return (
     <Wrapper>
       <Link to="/" current={isActive("/", pathname)}>
-        <Icon icon="home" />
+        <Icon icon="user-circle" />
         <LinkTitle>Home</LinkTitle>
       </Link>
       <Link to="/skills" current={isActive("/skills", pathname)}>
@@ -28,7 +28,7 @@ const Navigation = props => {
         <LinkTitle>Education</LinkTitle>
       </Link>
       <Link to="/portfolio" current={isActive("/portfolio", pathname)}>
-        <Icon icon="cubes" />
+        <Icon icon="folder" />
         <LinkTitle>Portfolio</LinkTitle>
       </Link>
     </Wrapper>

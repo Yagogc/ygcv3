@@ -5,7 +5,9 @@ import {
   faCode,
   faBriefcase,
   faGraduationCap,
-  faCubes
+  faCubes,
+  faUserCircle,
+  faFolder
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
@@ -25,7 +27,9 @@ const Iconography = () => {
     faFacebook,
     faGithubAlt,
     faLinkedinIn,
-    faGooglePlusG
+    faGooglePlusG,
+    faUserCircle,
+    faFolder
   );
 };
 

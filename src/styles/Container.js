@@ -21,4 +21,9 @@ const Wrapper = styled.div`
     props.horizontal ? 0 : props.theme.container.padding};
   padding-bottom: ${props =>
     props.horizontal ? 0 : props.theme.container.padding};
+
+  @media (${props => props.theme.mq.desktop}) {
+    ${props =>
+      props.header ? `padding-right: ${props.theme.container.padding}` : ""};
+  }
 `;

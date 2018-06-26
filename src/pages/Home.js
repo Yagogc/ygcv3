@@ -127,7 +127,7 @@ const CardHome = styled(Card)`
 const CardSocial = styled(Card)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 10px;
 `;
 
 const Logo = styled.div`

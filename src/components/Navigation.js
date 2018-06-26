@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "react-emotion";
 import { Link as LinkC, withRouter } from "react-router-dom";
-import color from "./../styles/colors";
 import Icon from "../styles/Icon";
 
 const isActive = (path, currentPath) =>
@@ -48,7 +47,7 @@ const Wrapper = styled.nav`
     height: 60px;
     justify-content: space-between;
     background: ${props => props.theme.color.ui4};
-    color: ${color.text1};
+    color: ${props => props.theme.color.text1};
     box-shadow: inset 0 1px 0px 0px rgba(255, 255, 255, 0.1);
   }
 `;
@@ -64,7 +63,7 @@ const LinkTitle = styled.span`
   }
 `;
 const Link = styled(LinkC)`
-  color: ${color.text1};
+  color: ${props => props.theme.color.text1};
   text-decoration: none;
   padding: 5px 10px;
   display: flex;
@@ -91,8 +90,8 @@ const Link = styled(LinkC)`
     left: 0;
     background: linear-gradient(
       135deg,
-      ${color.brand3} 0%,
-      ${color.brand4} 100%
+      ${props => props.theme.color.brand3} 0%,
+      ${props => props.theme.color.brand4} 100%
     );
     background-repeat: no-repeat;
     width: 100%;

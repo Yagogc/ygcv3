@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "react-emotion";
 
-import color from "./../styles/colors";
 import Icon from "../styles/Icon";
 import Navigation from "./Navigation";
 import Container from "../styles/Container";
@@ -32,7 +31,7 @@ const Wrapper = styled.header`
   width: 100%;
   height: 60px;
   background: ${props => props.theme.color.ui4};
-  color: ${color.text1};
+  color: ${props => props.theme.color.text1};
   box-shadow: inset 0 -1px 0px 0px rgba(255, 255, 255, 0.1);
 `;
 const InnerWrapper = styled.header`
@@ -45,10 +44,14 @@ const Button = styled.a`
   height: 100%;
   display: flex;
   align-items: center;
-  color: ${color.text1};
+  color: ${props => props.theme.color.text1};
   text-decoration: none;
   padding: 5px 20px;
-  background: linear-gradient(135deg, ${color.brand3} 0%, ${color.brand4} 100%);
+  background: linear-gradient(
+    135deg,
+    ${props => props.theme.color.brand3} 0%,
+    ${props => props.theme.color.brand4} 100%
+  );
   overflow: hidden;
   position: relative;
   box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.4);

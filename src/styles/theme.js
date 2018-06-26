@@ -1,6 +1,7 @@
 const theme = {
-  borderRadius: "50%",
-  borderColor: "#BF67AD",
+  ws: {
+    padding: "20px"
+  },
   mq: {
     mobile: "max-width: 768px",
     desktop: "min-width: 768px"
@@ -20,8 +21,8 @@ const theme = {
     brand4: "#FF5252"
   },
   container: {
-    width: "1200px",
-    padding: "10px"
+    width: "1100px",
+    padding: "20px"
   },
   brands: {
     facebook: "#3b5998",

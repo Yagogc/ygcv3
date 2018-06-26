@@ -106,35 +106,33 @@ const Data = styled.div`
 
 const Info = styled.div`
   flex-grow: 2;
-  @media (${props => props.theme.mq.mobile}) {
-    margin-bottom: 10px;
-  }
-  @media (${props => props.theme.mq.desktop}) {
-    width: 66%;
-  }
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-gap: ${props => props.theme.ws.padding};
 `;
 
 const CardHome = styled(Card)`
-  display: flex;
+  display: grid;
+  grid-gap: ${props => props.theme.ws.padding};
+  justify-content: center;
   align-items: center;
   @media (${props => props.theme.mq.mobile}) {
-    flex-direction: column-reverse;
+    grid-template-rows: auto auto;
+  }
+  @media (${props => props.theme.mq.desktop}) {
+    grid-template-columns: 1fr 2fr;
   }
 `;
 
 const CardSocial = styled(Card)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 20px;
 `;
 
 const Logo = styled.div`
   flex-grow: 1;
   text-align: center;
-
-  @media (${props => props.theme.mq.desktop}) {
-    width: 33%;
-  }
 `;
 
 const LogoImg = styled.img`

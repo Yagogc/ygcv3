@@ -4,6 +4,13 @@ import styled from "react-emotion";
 import logo from "../assets/logo.png";
 import SocialCard from "./../styles/SocialCard";
 import CardData from "./../styles/CardData";
+import {
+  Interest,
+  InterestTitle,
+  InterestUl,
+  InterestLi,
+  InterestCard
+} from "./../styles/Interest";
 
 const Home = () => {
   return (
@@ -23,10 +30,10 @@ const Home = () => {
               info@yagogc.com
             </CardData>
             <CardData padded icon="map-marker-alt">
-              London, GB
+              London
             </CardData>
             <CardData padded icon="phone">
-              +44 7490 303306
+              +447490303306
             </CardData>
             <CardData padded icon="calendar-alt">
               29/01/1988
@@ -34,7 +41,7 @@ const Home = () => {
           </Data>
         </Info>
       </CardHome>
-      <CardSocial>
+      <CardSocial padded marginBottom>
         <SocialCard padded icon="github-alt" color="github">
           Github
         </SocialCard>
@@ -48,6 +55,33 @@ const Home = () => {
           Google +
         </SocialCard>
       </CardSocial>
+      <Card>
+        <Interest>
+          <InterestTitle>
+            <InterestCard icon="heart">Interest</InterestCard>
+          </InterestTitle>
+          <InterestUl>
+            <InterestLi>
+              <InterestCard icon="gamepad">Games</InterestCard>
+            </InterestLi>
+            <InterestLi>
+              <InterestCard icon="film">Films</InterestCard>
+            </InterestLi>
+            <InterestLi>
+              <InterestCard icon="tv-retro">TV Shows</InterestCard>
+            </InterestLi>
+            <InterestLi>
+              <InterestCard icon="plane">Travel</InterestCard>
+            </InterestLi>
+            <InterestLi>
+              <InterestCard icon="drafting-compass">UI design</InterestCard>
+            </InterestLi>
+            <InterestLi>
+              <InterestCard icon="tablet-alt">Gadgets</InterestCard>
+            </InterestLi>
+          </InterestUl>
+        </Interest>
+      </Card>
     </React.Fragment>
   );
 };
@@ -66,11 +100,8 @@ const Introduction = styled.p`
 `;
 const Data = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 1em;
-  @media (${props => props.theme.mq.mobile}) {
-    grid-template-columns: auto auto;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 10px;
 `;
 
 const Info = styled.div`
@@ -92,12 +123,11 @@ const CardHome = styled(Card)`
 `;
 
 const CardSocial = styled(Card)`
-  display: flex;
-  align-items: center;
-  @media (${props => props.theme.mq.mobile}) {
-    flex-wrap: wrap;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  grid-gap: 10px;
 `;
+
 const Logo = styled.div`
   flex-grow: 1;
   text-align: center;

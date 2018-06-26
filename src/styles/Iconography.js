@@ -11,7 +11,14 @@ import {
   faMapMarkerAlt,
   faAt,
   faCalendarAlt,
-  faPhone
+  faPhone,
+  faHeart,
+  faTvRetro,
+  faFilm,
+  faPlane,
+  faGamepad,
+  faDraftingCompass,
+  faTabletAlt
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
@@ -37,7 +44,14 @@ const Iconography = () => {
     faMapMarkerAlt,
     faAt,
     faCalendarAlt,
-    faPhone
+    faPhone,
+    faHeart,
+    faTvRetro,
+    faFilm,
+    faPlane,
+    faGamepad,
+    faDraftingCompass,
+    faTabletAlt
   );
 };
 

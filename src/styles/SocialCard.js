@@ -33,7 +33,6 @@ export default withTheme(SocialCard);
 
 const CardWrapper = styled.a`
   width: 100%;
-  min-width: 175px;
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -42,7 +41,6 @@ const CardWrapper = styled.a`
   text-decoration: none;
   background: ${props => (props.brand ? props.brand : "none")};
   padding: ${props => (props.padded ? "10px" : 0)};
-  margin: 10px;
   transition: all 0.3s ease-in-out;
   box-shadow: inset 0 0 0 2px
     ${props => (props.brand ? darken(0.2, props.brand) : "none")};

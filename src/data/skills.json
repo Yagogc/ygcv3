@@ -1,0 +1,32 @@
+[
+  {
+    "name": "HTML",
+    "icon": "html5",
+    "skills": ["HTML5", "Semantic", "Accessibility", "ARIA", "Responsive Web Design"]
+  },
+  {
+    "name": "CSS",
+    "icon": "css3-alt",
+    "skills": ["CSS3", "Sass", "BEM", "OOCSS", "SMACSS", "Flexbox", "CSS Grid", "PostCSS", "Bootstrap", "Foundation"]
+  },
+  {
+    "name": "Javascript",
+    "icon": "js",
+    "skills": ["ES6", "jQuery", "Unit Testing", "Jest", "Jasmine", "E2E Testing", "Cypress"]
+  },
+  {
+    "name": "React",
+    "icon": "react",
+    "skills": ["Redux", "React Router", "Emotion", "Styled Components", "Radium", "Emotion"]
+  },
+  {
+    "name": "Tools",
+    "icon": "toolbox",
+    "skills": ["GIT", "Webpack", "Parcel", "Grunt", "Gulp", "Sketch", "Figma", "Zeplin", "Balsamiq", "Adobe Photoshop", "Adobe XD", "Adobe Target", "Vagrant", "Docker", "Google Analytics"]
+  },
+  {
+    "name": "Misc",
+    "icon": "cogs",
+    "skills": ["UI Design", "UX Design", "Wireframing", "Agile", "Scrum", "Kanban", "TDD", "BDD", "A/B Testing"]
+  }
+]

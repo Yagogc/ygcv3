@@ -18,13 +18,18 @@ import {
   faPlane,
   faGamepad,
   faDraftingCompass,
-  faTabletAlt
+  faTabletAlt,
+  faCogs,
+  faToolbox
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
   faGithubAlt,
   faLinkedinIn,
-  faGooglePlusG
+  faGooglePlusG,
+  faCss3Alt,
+  faHtml5,
+  faReact
 } from "@fortawesome/free-brands-svg-icons";
 
 const Iconography = () => {
@@ -51,7 +56,12 @@ const Iconography = () => {
     faPlane,
     faGamepad,
     faDraftingCompass,
-    faTabletAlt
+    faTabletAlt,
+    faCogs,
+    faToolbox,
+    faCss3Alt,
+    faHtml5,
+    faReact
   );
 };
 

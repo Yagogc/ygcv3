@@ -29,7 +29,8 @@ import {
   faGooglePlusG,
   faCss3Alt,
   faHtml5,
-  faReact
+  faReact,
+  faJs
 } from "@fortawesome/free-brands-svg-icons";
 
 const Iconography = () => {
@@ -61,7 +62,8 @@ const Iconography = () => {
     faToolbox,
     faCss3Alt,
     faHtml5,
-    faReact
+    faReact,
+    faJs
   );
 };
 

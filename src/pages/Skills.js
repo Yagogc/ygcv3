@@ -30,6 +30,6 @@ const Container = styled.div`
   grid-row: auto;
 
   @media (${props => props.theme.mq.desktop}) {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
   }
 `;

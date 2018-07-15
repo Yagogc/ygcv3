@@ -11,7 +11,7 @@
     "skills": ["CSS3", "Sass", "BEM", "OOCSS", "SMACSS", "Flexbox", "CSS Grid", "PostCSS", "Bootstrap", "Foundation"]
   },
   {
-    "name": "Javascript",
+    "name": "JavaScript",
     "icon": "js",
     "iconType": "fab",
     "skills": ["ES6", "jQuery", "Unit Testing", "Jest", "Jasmine", "E2E Testing", "Cypress"]
@@ -20,7 +20,7 @@
     "name": "React",
     "icon": "react",
     "iconType": "fab",
-    "skills": ["Redux", "React Router", "Emotion", "Styled Components", "Radium", "Emotion"]
+    "skills": ["Redux", "React Router", "Emotion", "Styled Components", "Radium"]
   },
   {
     "name": "Tools",

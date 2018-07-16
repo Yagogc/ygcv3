@@ -22,10 +22,6 @@ const Navigation = props => {
         <Icon icon="briefcase" />
         <LinkTitle>Work</LinkTitle>
       </Link>
-      <Link to="/education" current={isActive("/education", pathname)}>
-        <Icon icon="graduation-cap" />
-        <LinkTitle>Education</LinkTitle>
-      </Link>
       <Link to="/portfolio" current={isActive("/portfolio", pathname)}>
         <Icon icon="folder" />
         <LinkTitle>Portfolio</LinkTitle>

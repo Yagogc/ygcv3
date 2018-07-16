@@ -6,7 +6,7 @@ import Grid from "./../styles/Grid";
 const Education = () => {
   return (
     <Grid dColumns="2">
-      {diplomas.map(diploma => <CardEdu {...diploma} />)}
+      {diplomas.map((diploma, i) => <CardEdu {...diploma} key={i} />)}
     </Grid>
   );
 };

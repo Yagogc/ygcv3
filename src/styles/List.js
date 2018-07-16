@@ -13,7 +13,9 @@ const List = props => {
           </ListCard>
         </ListTitle>
       )}
-      <ListUl>{props.items.map(item => <ListLi>{item}</ListLi>)}</ListUl>
+      <ListUl>
+        {props.items.map((item, i) => <ListLi key={i}>{item}</ListLi>)}
+      </ListUl>
     </ListWrapper>
   );
 };

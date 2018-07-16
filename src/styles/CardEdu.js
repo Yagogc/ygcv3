@@ -22,7 +22,7 @@ const CardEdu = props => {
           {props.institution} - {props.location}
         </Location>
       </Info>
-      <Download href={props.downloadUrl}>
+      <Download href={process.env.PUBLIC_URL + props.downloadUrl}>
         Download Diploma <Icon icon="file-pdf" />
       </Download>
     </Wrapper>

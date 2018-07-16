@@ -11,7 +11,6 @@ const Skills = () => {
   return (
     <Grid dColumns="1">
       <Grid dColumns="2">
-        {console.log(skills.length)}
         {skills.map((skill, i) => (
           <List
             name={skill.name}

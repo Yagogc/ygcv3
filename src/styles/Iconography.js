@@ -20,7 +20,8 @@ import {
   faDraftingCompass,
   faTabletAlt,
   faCogs,
-  faToolbox
+  faToolbox,
+  faCertificate
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
@@ -63,7 +64,8 @@ const Iconography = () => {
     faCss3Alt,
     faHtml5,
     faReact,
-    faJs
+    faJs,
+    faCertificate
   );
 };
 

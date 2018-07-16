@@ -8,7 +8,7 @@ const CardEdu = props => {
   return (
     <Wrapper>
       <Header>
-        <Icon icon="certificate" mRight />
+        <Icon icon="certificate" mright="true" />
         <TitleWrapper>
           <Title>{props.title}</Title> <Prep>in</Prep>
           <Name>{props.name}</Name>
@@ -22,7 +22,7 @@ const CardEdu = props => {
           {props.institution} - {props.location}
         </Location>
       </Info>
-      <Download href={process.env.PUBLIC_URL + props.downloadUrl}>
+      <Download href={window.location.origin + props.downloadUrl}>
         Download Diploma <Icon icon="file-pdf" />
       </Download>
     </Wrapper>

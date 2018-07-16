@@ -2,34 +2,30 @@ import React from "react";
 import { List } from "../styles/List";
 
 import skills from "../data/skills";
-// import Container from "./../styles/Container";
-import styled from "react-emotion";
+
+import Education from "./../components/Education";
+import Grid from "./../styles/Grid";
+import Separator from "../styles/Separator";
 
 const Skills = () => {
   return (
-    <Container>
-      {console.log(skills.length)}
-      {skills.map((skill, i) => (
-        <List
-          name={skill.name}
-          icon={skill.icon}
-          items={skill.skills}
-          iconType={skill.iconType}
-          key={i}
-        />
-      ))}
-    </Container>
+    <Grid dColumns="1">
+      <Grid dColumns="2">
+        {console.log(skills.length)}
+        {skills.map((skill, i) => (
+          <List
+            name={skill.name}
+            icon={skill.icon}
+            items={skill.skills}
+            iconType={skill.iconType}
+            key={i}
+          />
+        ))}
+      </Grid>
+      <Separator />
+      <Education />
+    </Grid>
   );
 };
 
 export default Skills;
-
-const Container = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  grid-row: auto;
-
-  @media (${props => props.theme.mq.desktop}) {
-    grid-template-columns: 1fr 1fr;
-  }
-`;

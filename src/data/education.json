@@ -1,11 +1,10 @@
-[
-  {
+[{
     "title": "Higher Technician in Development of Web Applications",
     "year": "2015",
     "institution": "IES Chan Do Monte",
     "institution-address": "//www.ieschandomonte.edu.es/",
     "location": "Spain",
-    "download-url": ""
+    "download-url": "/wda.pdf"
   },
   {
     "title": "Technician in Microcomputer Systems and Networks",
@@ -13,6 +12,6 @@
     "institution": "IES Chan Do Monte",
     "institution-address": "//www.ieschandomonte.edu.es/",
     "location": "Spain",
-    "download-url": ""
+    "download-url": "/msn.pdf"
   }
 ]

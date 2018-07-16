@@ -1,17 +1,19 @@
 [{
-    "title": "Higher Technician in Development of Web Applications",
+    "title": "Higher Technician",
+    "name": "Development of Web Applications",
     "year": "2015",
     "institution": "IES Chan Do Monte",
     "institution-address": "//www.ieschandomonte.edu.es/",
     "location": "Spain",
-    "download-url": "/wda.pdf"
+    "downloadUrl": "/wda.pdf"
   },
   {
-    "title": "Technician in Microcomputer Systems and Networks",
+    "title": "Technician",
+    "name": "Microcomputer Systems and Networks",
     "year": "2014",
     "institution": "IES Chan Do Monte",
     "institution-address": "//www.ieschandomonte.edu.es/",
     "location": "Spain",
-    "download-url": "/msn.pdf"
+    "downloadUrl": "/msn.pdf"
   }
 ]

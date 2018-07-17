@@ -1,6 +1,7 @@
 [{
     "title": "Higher Technician",
     "name": "Development of Web Applications",
+    "description": "Developing, implementing and maintaining web applications, irrespective of the model used and using specific technologies, guaranteeing secure access to data and complying with the accessibility, usability and quality criteria required by established standards.",
     "year": "2015",
     "institution": "IES Chan Do Monte",
     "institution-address": "//www.ieschandomonte.edu.es/",
@@ -10,6 +11,7 @@
   {
     "title": "Technician",
     "name": "Microcomputer Systems and Networks",
+    "description": "Installing, configuring and maintaining isolated or networked microcomputer systems, as well as local networks in small settings, guaranteeing their functionality and applying the quality protocols on safety and respect for the environment.",
     "year": "2014",
     "institution": "IES Chan Do Monte",
     "institution-address": "//www.ieschandomonte.edu.es/",

@@ -22,8 +22,8 @@ const CardEdu = props => {
           {props.institution} - {props.location}
         </Location>
       </Info>
-      <Download href={window.location.origin + props.downloadUrl}>
-        Download Diploma <Icon icon="file-pdf" />
+      <Download href={props.downloadUrl}>
+        Diploma <Icon icon="file-pdf" />
       </Download>
     </Wrapper>
   );

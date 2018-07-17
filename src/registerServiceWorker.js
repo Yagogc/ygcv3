@@ -29,11 +29,8 @@ export default function register() {
       return;
     }
 
-    window.addEventListener("load", event => {
+    window.addEventListener("load", () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
-      if (event.request.url.match("\\.pdf$")) {
-        return false;
-      }
       if (isLocalhost) {
         // This is running on localhost. Lets check if a service worker still exists or not.
         checkValidServiceWorker(swUrl);

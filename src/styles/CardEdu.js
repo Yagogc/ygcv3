@@ -14,6 +14,7 @@ const CardEdu = props => {
           <Name>{props.name}</Name>
         </TitleWrapper>
       </Header>
+      <Description>{props.description}</Description>
       <Info>
         <Date>
           <Icon icon="calendar-alt" /> {props.year}
@@ -33,9 +34,8 @@ export default CardEdu;
 
 const Wrapper = styled.div`
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: column;
   color: ${props => props.theme.color.text1};
   text-decoration: none;
   background: ${props => props.theme.color.ui2};
@@ -66,7 +66,7 @@ const Name = styled.h1`
 `;
 
 const Info = styled.div`
-  padding: 0 10px;
+  padding: 10px 10px;
   font-size: 14px;
   display: flex;
   flex-direction: row-reverse;
@@ -79,6 +79,14 @@ const Date = styled.span`
   padding: 5px 10px;
 `;
 const Location = styled.span``;
+
+const Description = styled.p`
+  font-size: 14px;
+  text-align: justify;
+  padding: 5px 10px;
+  text-indent: 1rem;
+  flex-grow: 1;
+`;
 
 const Download = styled.a`
   text-align: right;

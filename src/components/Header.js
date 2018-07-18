@@ -33,6 +33,7 @@ const Wrapper = styled.header`
   background: ${props => props.theme.color.ui4};
   color: ${props => props.theme.color.text1};
   box-shadow: inset 0 -1px 0px 0px rgba(255, 255, 255, 0.1);
+  z-index: 100;
 `;
 const InnerWrapper = styled.header`
   display: flex;

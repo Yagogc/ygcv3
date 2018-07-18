@@ -7,6 +7,7 @@ const Icon = props => {
     <IconWrapper
       icon={[props.iconType ? props.iconType : "fal", props.icon]}
       mright={props.mright}
+      mleft={props.mleft}
     />
   );
 };
@@ -14,6 +15,7 @@ const Icon = props => {
 export default Icon;
 
 const IconWrapper = styled(FontAwesomeIcon)`
-  ${"" /* margin-right: 5px; */} z-index: inherit;
+  z-index: inherit;
   ${props => (props.mright ? `margin-right: 10px;` : "")};
+  ${props => (props.mleft ? `margin-left: 10px;` : "")};
 `;

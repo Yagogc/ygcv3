@@ -154,6 +154,10 @@ const Block = {
   Info: styled.div`
     font-size: 12px;
     display: grid;
+    grid-gap: 5px;
+    background: ${props => props.theme.color.ui4};
+    padding: 5px 10px;
+
     @media (${props => props.theme.mq.mobile}) {
       grid-auto-rows: 1fr;
     }
@@ -168,7 +172,10 @@ const Block = {
   DateIcon: styled(Icon)``,
   StarDate: styled.span``,
   EndDate: styled.span``,
-  Description: styled.p``,
+  Description: styled.p`
+    text-align: justify;
+    font-size: 14px;
+  `,
   TechList: styled.ul`
     width: 100%;
     display: grid;

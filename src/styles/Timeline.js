@@ -175,6 +175,8 @@ const Block = {
   Description: styled.p`
     text-align: justify;
     font-size: 14px;
+    text-indent: 1rem;
+    padding: 5px;
   `,
   TechList: styled.ul`
     width: 100%;

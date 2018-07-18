@@ -1,0 +1,131 @@
+[{
+  "company": "Sainsbury's",
+  "companyUrl": "https://www.sainsburys.co.uk/",
+  "title": "Front End Developer",
+  "startDate": "06/2018",
+  "endDate": "",
+  "isCurrent": true,
+  "description": "",
+  "techs": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "ES6",
+    "React",
+    "Redux",
+    "Styled Components",
+    "Serveless",
+    "AWS Lambda",
+    "Webpack",
+    "Git",
+    "Agile",
+    "Scrum"
+  ]
+},
+{
+  "company": "Optimad",
+  "companyUrl": "https://www.optimad.com/",
+  "title": "Front End Developer",
+  "startDate": "01/2018",
+  "endDate": "05/2018",
+  "isCurrent": false,
+  "description": "",
+  "techs": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "ES6",
+    "jQuery",
+    "Git",
+    "Gulp",
+    "Webpack",
+    "Agile",
+    "Scrum",
+    "Figma",
+    "Balsamiq"
+  ]
+},
+{
+  "company": "Harrods",
+  "companyUrl": "https://www.harrods.com/en-gb",
+  "title": "Front End Developer",
+  "startDate": "10/2016",
+  "endDate": "01/2018",
+  "isCurrent": false,
+  "description": "",
+  "techs": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "ES6",
+    "jQuery",
+    "React",
+    "Umbraco",
+    "Git",
+    "Grunt",
+    "Gulp",
+    "Webpack",
+    "Agile",
+    "Scrum"
+  ]
+},
+{
+  "company": "Penta Consulting",
+  "companyUrl": "https://www.pentaconsulting.com/technology/",
+  "title": "Front End Developer",
+  "startDate": "06/2016",
+  "endDate": "10/2016",
+  "isCurrent": false,
+  "description": "",
+  "techs": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "jQuery",
+    "Bootstrap",
+    "Wordpress",
+    "PHP",
+    "Git",
+    "Bitbucket",
+    "Grunt",
+    "Vagrant",
+    "Agile",
+    "Kanban"
+  ]
+},
+{
+  "company": "Hotel Ardora",
+  "companyUrl": "//ardora.es/",
+  "title": "Front End Developer",
+  "startDate": "02/2016",
+  "endDate": "03/2016",
+  "isCurrent": false,
+  "description": "",
+  "techs": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "jQuery",
+    "Bootstrap",
+    "SVGs"
+  ]
+},
+{
+  "company": "MyMoneyPlatform",
+  "companyUrl": "https://www.mymoneyplatform.com/",
+  "title": "Front End Developer",
+  "startDate": "09/2015",
+  "endDate": "12/2015",
+  "isCurrent": false,
+  "description": "",
+  "techs": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "jQuery",
+    "Bootstrap",
+    "Wordpress"
+  ]
+}
+]
+

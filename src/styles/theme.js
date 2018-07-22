@@ -1,6 +1,6 @@
 const theme = {
   ws: {
-    padding: "20px"
+    padding: "10px"
   },
   mq: {
     mobile: "max-width: 768px",

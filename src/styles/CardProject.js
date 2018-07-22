@@ -52,7 +52,7 @@ const Img = styled.div`
     ),
     url(${props => (props.bg ? props.bg : "")});
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 10px;
   display: grid;
   grid-gap: 10px;

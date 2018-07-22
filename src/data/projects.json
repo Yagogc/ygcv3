@@ -1,0 +1,46 @@
+[{
+    "name": "Harrods",
+    "company": "Harrods",
+    "description": "",
+    "img": "harrods.png",
+    "link": "https//www.harrods.com",
+    "git": "",
+    "skills": ["HTML5", "CSS3", "Sass", "Javascript", "ES6", "jQuery", "Git", "Bitbucket", "Grunt", "Gulp", "Agile", "Scrum"]
+  },
+  {
+    "name": "ChelseaFan12",
+    "company": "PentaTechnology",
+    "description": "",
+    "img": "cfan12.png",
+    "link": "https://www.chelseafan12.com/",
+    "git": "",
+    "skills": ["HTML5", "CSS3", "Sass", "Bootstrap", "Javascript", "jQuery", "Git", "Bitbucket", "Grunt", "Vagrant", "Agile", "Kanban"]
+  },
+  {
+    "name": "Hotel Ardora",
+    "company": "Ardora",
+    "description": "",
+    "img": "ardora.png",
+    "link": "https://www.ardora.es/",
+    "git": "",
+    "skills": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Git", "SVGs"]
+  },
+  {
+    "name": "My Money Platform",
+    "company": "My Money Platform",
+    "description": "",
+    "img": "mmp.png",
+    "link": "https://www.mymoneyplatform.com/",
+    "git": "",
+    "skills": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Git", "Wordpress"]
+  },
+  {
+    "name": "My Personal Website",
+    "company": "",
+    "description": "",
+    "img": "ygc.png",
+    "link": "https://yagogc.com/",
+    "git": "",
+    "skills": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Git"]
+  }
+]

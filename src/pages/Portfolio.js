@@ -1,7 +1,13 @@
 import React from "react";
+import Projects from "./../components/Projects";
+import Card from "./../styles/Card";
 
 const Portfolio = () => {
-  return <h1>Portfolio</h1>;
+  return (
+    <Card padded>
+      <Projects />
+    </Card>
+  );
 };
 
 export default Portfolio;

@@ -40,7 +40,7 @@
     "description": "",
     "img": "ygc.png",
     "link": "https://yagogc.com/",
-    "git": "",
+    "git": "https://github.com/Yagogc/ygc",
     "skills": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Git"]
   }
 ]

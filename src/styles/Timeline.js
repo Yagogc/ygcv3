@@ -31,7 +31,7 @@ const animation = keyframes`
       transform: translateX(-50%) translatey(-50%) scale(1.0);
   }
   50% {
-      transform: translateX(-50%) translatey(-50%) scale(0.8);
+      transform: translateX(-50%) translatey(-50%) scale(0.5);
   }
 `;
 
@@ -119,7 +119,7 @@ const Block = {
       background-size: 30px 100%;
       background-position: center;
       border-radius: 50%;
-      animation: ${animation} 1s ease-in-out infinite;
+      animation: ${animation} 1.5s ease-in-out infinite;
     }
   `,
   Card: styled.div`

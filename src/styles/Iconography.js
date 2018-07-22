@@ -24,7 +24,8 @@ import {
   faCertificate,
   faGlobe,
   faDotCircle,
-  faLongArrowRight
+  faLongArrowRight,
+  faBuilding
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
@@ -71,7 +72,8 @@ const Iconography = () => {
     faCertificate,
     faGlobe,
     faDotCircle,
-    faLongArrowRight
+    faLongArrowRight,
+    faBuilding
   );
 };
 

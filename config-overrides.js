@@ -1,12 +1,11 @@
-const { compose } = require("react-app-rewired");
-const { createEmotionRewire } = require("react-app-rewire-emotion");
+const rewirePreloadPlugin = require("react-app-rewire-preload-plugin");
+const { rewireEmotion } = require("react-app-rewire-emotion");
 
-/* config-overrides.js */
+// Add preloading support
 module.exports = function override(config, env) {
-  const rewires = compose(
-    //createRewireForSomeOtherPlugin(),
-    // ... place more rewires
-    createEmotionRewire({ inline: true })
-  );
-  return rewires(config, env);
+  config = rewirePreloadPlugin(config, env);
+  config = rewireEmotion(config, env, { inline: true });
+
+  //do stuff with the webpack config...
+  return config;
 };

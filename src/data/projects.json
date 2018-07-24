@@ -39,7 +39,7 @@
     "company": "Harrods",
     "description": "",
     "img": "harrods.png",
-    "link": "https//www.harrods.com",
+    "link": "https://www.harrods.com",
     "git": "",
     "skills": ["HTML5", "CSS3", "Sass", "Javascript", "ES6", "jQuery", "Git", "Bitbucket", "Grunt", "Gulp", "Agile", "Scrum"]
   },

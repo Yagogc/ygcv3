@@ -35,8 +35,8 @@ const Home = () => {
             <CardData padded icon="phone">
               +447490303306
             </CardData>
-            <CardData padded icon="calendar-alt">
-              29/01/1988
+            <CardData padded icon="ban">
+              Not Available
             </CardData>
           </Data>
         </Info>

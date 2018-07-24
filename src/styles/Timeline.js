@@ -39,10 +39,12 @@ const Block = {
   Wrapper: styled.div`
     position: relative;
     margin: 2em 0;
+    pointer-events: none;
 
     &:first-child {
       margin-top: 0;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -130,6 +132,7 @@ const Block = {
     display: grid;
     grid-auto-rows: auto;
     grid-gap: 10px;
+    pointer-events: auto;
 
     @media (${props => props.theme.mq.desktop}) {
       color: white;

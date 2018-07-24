@@ -9,10 +9,15 @@ const Projects = () => {
       {projects.map((project, i) => (
         <Card.Wrapper key={i}>
           <Card.Title>{project.name}</Card.Title>
-          {project.company && (
+          {project.company ? (
             <Card.Company>
               <Card.Icon icon="building" mright="true" />
               <Card.CompanyName>{project.company}</Card.CompanyName>
+            </Card.Company>
+          ) : (
+            <Card.Company>
+              <Card.Icon icon="user" mright="true" />
+              <Card.CompanyName>Personal Project</Card.CompanyName>
             </Card.Company>
           )}
           <Card.Img bg={require(`../assets/portfolio/${project.img}`)}>

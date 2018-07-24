@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-auto-rows: auto;
   grid-gap: 10px;
+  align-content: start;
 
   @media (${props => props.theme.mq.desktop}) {
   }
@@ -44,6 +45,7 @@ const SkillItem = styled.li`
 
 const Img = styled.div`
   min-height: 200px;
+  max-height: 200px;
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -71,16 +73,14 @@ const Link = styled.a`
   font-size: 14px;
   cursor: pointer;
   background: ${props =>
-    props.git ? props.theme.brands.github : props.theme.color.ui4};
+    props.git ? darken(0.2, props.theme.brands.github) : props.theme.color.ui4};
   padding: 5px 10px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     background: ${props =>
-      props.git
-        ? darken(0.2, props.theme.brands.github)
-        : props.theme.color.ui4};
+      props.git ? props.theme.brands.github : props.theme.color.ui4};
   }
 `;
 

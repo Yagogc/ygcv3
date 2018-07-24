@@ -1,4 +1,40 @@
 [{
+    "name": "React Calc",
+    "company": "",
+    "description": "",
+    "img": "calc.png",
+    "link": "https://calc.yagogc.com/",
+    "git": "https://github.com/Yagogc/react-calc",
+    "skills": ["React", "Styled Components", "Jest", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+  },
+  {
+    "name": "Catch of the Day",
+    "company": "",
+    "description": "",
+    "img": "cotd.png",
+    "link": "https://catchoftheday.yagogc.com/",
+    "git": "https://github.com/Yagogc/catch-of-the-day",
+    "skills": ["React", "Styled Components", "Firebase", "OAuth", "APIs", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+  },
+  {
+    "name": "Murray Dinner",
+    "company": "",
+    "description": "",
+    "img": "murraydinner.png",
+    "link": "https://murraydinner.yagogc.com/",
+    "git": "https://github.com/Yagogc/murraydinner",
+    "skills": ["React", "Styled Components", "CSS Grid", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+  },
+  {
+    "name": "FilmDB",
+    "company": "",
+    "description": "",
+    "img": "filmdb.png",
+    "link": "https://filmdb.yagogc.com/",
+    "git": "https://github.com/Yagogc/filmdb",
+    "skills": ["React", "Styled Components", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+  },
+  {
     "name": "Harrods",
     "company": "Harrods",
     "description": "",
@@ -6,6 +42,15 @@
     "link": "https//www.harrods.com",
     "git": "",
     "skills": ["HTML5", "CSS3", "Sass", "Javascript", "ES6", "jQuery", "Git", "Bitbucket", "Grunt", "Gulp", "Agile", "Scrum"]
+  },
+  {
+    "name": "GitBattle",
+    "company": "",
+    "description": "",
+    "img": "gitbattle.png",
+    "link": "https://yagogc.github.io/gitbattle",
+    "git": "https://github.com/Yagogc/gitbattle",
+    "skills": ["React", "HTML5", "CSS3", "Javascript", "Bootstrap", "APIs", "Git", "Webpack"]
   },
   {
     "name": "ChelseaFan12",

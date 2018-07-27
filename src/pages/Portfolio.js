@@ -1,12 +1,12 @@
 import React from "react";
 import Projects from "./../components/Projects";
-import Card from "./../styles/Card";
+import Block from "./../styles/Block";
 
 const Portfolio = () => {
   return (
-    <Card padded>
+    <Block padded>
       <Projects />
-    </Card>
+    </Block>
   );
 };
 

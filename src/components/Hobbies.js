@@ -1,6 +1,6 @@
 import React from "react";
 import hobbies from "../data/hobbies";
-import Card from "../styles/Card";
+import Block from "../styles/Block";
 import styled from "react-emotion";
 import {
   Interest,
@@ -11,7 +11,7 @@ import {
 } from "./../styles/Interest";
 const Hobbies = () => {
   return (
-    <Card>
+    <Block>
       <Interest>
         <InterestTitle>
           <InterestCard icon="heart">Interest</InterestCard>
@@ -24,7 +24,7 @@ const Hobbies = () => {
           ))}
         </InterestUl>
       </Interest>
-    </Card>
+    </Block>
   );
 };
 

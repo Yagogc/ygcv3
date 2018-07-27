@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "../styles/Card";
+import Block from "../styles/Block";
 import Works from "../components/Works";
 
 const Work = () => {
   return (
-    <Card>
+    <Block>
       <Works />
-    </Card>
+    </Block>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import socials from "../data/socials";
-import Card from "../styles/Card";
+import Block from "../styles/Block";
 import styled from "react-emotion";
 import SocialCard from "../styles/SocialCard";
 
@@ -23,7 +23,7 @@ const Social = () => {
 
 export default Social;
 
-const CardSocial = styled(Card)`
+const CardSocial = styled(Block)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
   grid-gap: 10px;

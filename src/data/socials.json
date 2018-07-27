@@ -1,0 +1,21 @@
+[{
+  "name": "Github",
+  "url": "//http://github.yagogc.com",
+  "icon": "github-alt",
+  "color": "github"
+}, {
+  "name": "LinkedIn",
+  "url": "//http://linkedin.yagogc.com",
+  "icon": "linkedin-in",
+  "color": "linkedin"
+}, {
+  "name": "Facebook",
+  "url": "https://www.facebook.com/jagogc",
+  "icon": "facebook",
+  "color": "facebook"
+}, {
+  "name": "Google +",
+  "url": "https://plus.google.com/115504754119086869548",
+  "icon": "google-plus-g",
+  "color": "google"
+}]

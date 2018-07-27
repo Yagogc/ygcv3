@@ -44,8 +44,8 @@ const SkillItem = styled.li`
 `;
 
 const Img = styled.div`
-  min-height: 200px;
-  max-height: 200px;
+  min-height: ${props => (props.small ? "100px" : "200px")};
+  max-height: ${props => (props.small ? "100px" : "200px")};
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -116,7 +116,7 @@ const Card = {
   StarDate: styled.span``,
   EndDate: styled.span``,
   Description: styled.p`
-    text-align: justify;
+    text-align: left;
     font-size: 14px;
     text-indent: 1rem;
     padding: 5px;

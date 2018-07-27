@@ -22,7 +22,7 @@ const SocialCard = props => {
     }
   };
   return (
-    <CardWrapper {...props} brand={color(props)} href="#">
+    <CardWrapper {...props} brand={color(props)} href={props.href}>
       <Icon icon={props.icon} iconType="fab" />
       <CardTitle>{props.children}</CardTitle>
     </CardWrapper>

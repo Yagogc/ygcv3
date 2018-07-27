@@ -20,6 +20,11 @@ const theme = {
     brand3: "#AA00DE",
     brand4: "#FF5252"
   },
+  gradient: ({ deg = 135 } = {}) => `linear-gradient(
+    ${deg}deg,
+    #AA00DE 0%,
+    #FF5252 100%
+  );`,
   container: {
     width: "1100px",
     padding: "20px"

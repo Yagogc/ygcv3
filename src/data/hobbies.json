@@ -1,0 +1,25 @@
+[{
+    "name": "Games",
+    "icon": "gamepad"
+  },
+  {
+    "name": "Films",
+    "icon": "film"
+  },
+  {
+    "name": "TV Shows",
+    "icon": "tv-retro"
+  },
+  {
+    "name": "Travel",
+    "icon": "plane"
+  },
+  {
+    "name": "UI Design",
+    "icon": "drafting-compass"
+  },
+  {
+    "name": "Gadgets",
+    "icon": "tablet-alt"
+  }
+]

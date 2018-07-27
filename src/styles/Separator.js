@@ -2,11 +2,8 @@ import styled from "react-emotion";
 
 const Separator = styled.div`
   height: 10px;
-  background: linear-gradient(
-    135deg,
-    ${props => props.theme.color.brand3} 0%,
-    ${props => props.theme.color.brand4} 100%
-  );
+  opacity: 0.7;
+  background: ${props => props.theme.gradient()};
 `;
 
 export default Separator;

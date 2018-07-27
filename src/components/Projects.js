@@ -8,7 +8,11 @@ const Projects = () => {
     <Grid dColumns="2">
       {projects.map((project, i) => (
         <Card.Wrapper key={i}>
-          <Card.Title>{project.name}</Card.Title>
+          {project.name ? (
+            <Card.Title>{project.name}</Card.Title>
+          ) : (
+            <Card.Title>Internal Project</Card.Title>
+          )}
           {project.company ? (
             <Card.Company>
               <Card.Icon icon="building" mright="true" />

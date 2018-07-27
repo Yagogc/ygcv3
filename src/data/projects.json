@@ -1,4 +1,13 @@
 [{
+    "name": "Active Kids",
+    "company": "Sainsbury's",
+    "description": "",
+    "img": "activekids.png",
+    "link": "https://activekids.sainsburys.co.uk/",
+    "git": "",
+    "skills": ["React", "Redux", "Jest", "Enzyme", "HTML5", "CSS3", "SASS", "Javascript", "ES6", "Git", "Webpack"]
+  },
+  {
     "name": "React Calc",
     "company": "",
     "description": "",
@@ -42,6 +51,15 @@
     "link": "https://www.harrods.com",
     "git": "",
     "skills": ["HTML5", "CSS3", "Sass", "Javascript", "ES6", "jQuery", "Git", "Bitbucket", "Grunt", "Gulp", "Agile", "Scrum"]
+  },
+  {
+    "name": "",
+    "company": "Harrods",
+    "description": "",
+    "img": "ndaharrods.png",
+    "link": "",
+    "git": "",
+    "skills": ["HTML5", "CSS3", "Sass", "Javascript", "ES6", "jQuery", "Git", "Bitbucket", "Webpack", "Gulp", "Agile", "Scrum"]
   },
   {
     "name": "GitBattle",

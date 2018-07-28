@@ -28,7 +28,8 @@ import {
   faBuilding,
   faUser,
   faPennant,
-  faBan
+  faBan,
+  faPlusCircle
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
@@ -79,7 +80,8 @@ const Iconography = () => {
     faBuilding,
     faUser,
     faPennant,
-    faBan
+    faBan,
+    faPlusCircle
   );
 };
 

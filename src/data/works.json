@@ -5,7 +5,7 @@
     "startDate": "06/2018",
     "endDate": "",
     "isCurrent": true,
-    "description": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus porttitor nulla sed iaculis. Nullam rhoncus posuere magna, nec dapibus dolor tincidunt quis. Integer quis neque sed ante gravida ultrices. In vulputate libero lorem, lobortis posuere turpis fermentum in.",
     "techs": [
       "HTML5",
       "CSS3",
@@ -15,11 +15,10 @@
       "Redux",
       "Styled Components",
       "Serveless",
-      "AWS Lambda",
+      "Lambda",
       "Webpack",
       "Git",
-      "Agile",
-      "Scrum"
+      "Agile"
     ]
   },
   {

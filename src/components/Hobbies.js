@@ -18,7 +18,7 @@ const Hobbies = () => {
         </InterestTitle>
         <InterestUl>
           {hobbies.map((hobbie, i) => (
-            <InterestLi>
+            <InterestLi key={i}>
               <InterestCard icon={hobbie.icon}>{hobbie.name}</InterestCard>
             </InterestLi>
           ))}

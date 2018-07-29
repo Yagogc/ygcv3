@@ -13,6 +13,7 @@ const Social = () => {
           icon={social.icon}
           href={social.url}
           color={social.color}
+          key={i}
         >
           {social.name}
         </SocialCard>

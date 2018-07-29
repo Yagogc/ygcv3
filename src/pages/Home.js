@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./../styles/Card";
+import Block from "../styles/Block";
 import styled from "react-emotion";
 import logo from "../assets/logo.png";
 import CardData from "./../styles/CardData";
@@ -7,6 +7,7 @@ import Grid from "./../styles/Grid";
 import Separator from "../styles/Separator";
 import Social from "../components/Social";
 import Hobbies from "./../components/Hobbies";
+import Currently from "./../components/Currently";
 
 const Home = () => {
   return (
@@ -41,6 +42,8 @@ const Home = () => {
       <Social />
       <Separator />
       <Hobbies />
+      <Separator />
+      <Currently />
     </Grid>
   );
 };
@@ -70,7 +73,7 @@ const Info = styled.div`
   grid-gap: ${props => props.theme.ws.padding};
 `;
 
-const CardHome = styled(Card)`
+const CardHome = styled(Block)`
   display: grid;
   grid-gap: ${props => props.theme.ws.padding};
   justify-content: center;

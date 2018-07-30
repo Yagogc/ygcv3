@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import Icon from "../styles/Icon";
 import Navigation from "./Navigation";
 import Container from "../styles/Container";
-import logo from "../assets/logo-40.png";
+import logo40 from "../assets/logo-40.png";
+import logo80 from "../assets/logo-80.png";
 
 const Header = () => {
   return (
@@ -13,7 +14,11 @@ const Header = () => {
       <Container horizontal header>
         <InnerWrapper>
           <ImgLink to="/">
-            <img src={logo} alt="logo" />
+            <picture>
+              <source media="(max-width: 768px)" srcset={logo80} />
+              <source media="(min-width: 768px)" srcset={logo40} />
+              <Img src={logo40} alt="Logo" />
+            </picture>
           </ImgLink>
           <Navigation />
           <Button href="#">
@@ -89,4 +94,7 @@ const Button = styled.a`
 
 const ImgLink = styled(Link)`
   height: 40px;
+`;
+const Img = styled.img`
+  height: 100%;
 `;

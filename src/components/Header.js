@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "react-emotion";
+import { Link } from "react-router-dom";
 
 import Icon from "../styles/Icon";
 import Navigation from "./Navigation";
 import Container from "../styles/Container";
+import logo from "../assets/logo-40.png";
 
 const Header = () => {
   return (
     <Wrapper>
       <Container horizontal header>
         <InnerWrapper>
-          <span>Yago Gonzalez</span>
+          <ImgLink to="/">
+            <img src={logo} alt="logo" />
+          </ImgLink>
           <Navigation />
           <Button href="#">
             <Icon icon="file-pdf" />
@@ -81,4 +85,8 @@ const Button = styled.a`
     transform: rotate(45deg) translateY(-50%) translateX(335%);
     transition: all 0.5s ease-in-out;
   }
+`;
+
+const ImgLink = styled(Link)`
+  height: 40px;
 `;

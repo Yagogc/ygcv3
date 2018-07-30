@@ -12,16 +12,20 @@ import Currently from "./../components/Currently";
 const Home = () => {
   return (
     <Grid>
-      <CardHome padded>
-        <Logo>
-          <LogoImg src={logo} alt="Logo" />
-        </Logo>
-        <Info>
-          <Introduction>
-            My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
-            specialized in HTML, CSS and JavaScript. I'm passionate about UX
-            design, responsive design and the latest web technologies.
-          </Introduction>
+      <Block padded>
+        <Grid>
+          <CardHome>
+            <Logo>
+              <LogoImg src={logo} alt="Logo" />
+            </Logo>
+            <Info>
+              <Introduction>
+                My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
+                specialized in HTML, CSS and JavaScript. I'm passionate about UX
+                design, responsive design and the latest web technologies.
+              </Introduction>
+            </Info>
+          </CardHome>
           <Data>
             <CardData padded icon="at">
               info@yagogc.com
@@ -36,8 +40,8 @@ const Home = () => {
               Not Available
             </CardData>
           </Data>
-        </Info>
-      </CardHome>
+        </Grid>
+      </Block>
       <Separator />
       <Social />
       <Separator />
@@ -73,7 +77,7 @@ const Info = styled.div`
   grid-gap: ${props => props.theme.ws.padding};
 `;
 
-const CardHome = styled(Block)`
+const CardHome = styled.div`
   display: grid;
   grid-gap: ${props => props.theme.ws.padding};
   justify-content: center;
@@ -92,5 +96,5 @@ const Logo = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 150px;
+  width: 120px;
 `;

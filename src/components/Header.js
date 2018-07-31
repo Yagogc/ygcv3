@@ -15,8 +15,8 @@ const Header = () => {
         <InnerWrapper>
           <ImgLink to="/">
             <picture>
-              <source media="(max-width: 768px)" srcset={logo80} />
-              <source media="(min-width: 768px)" srcset={logo40} />
+              <source media="(max-width: 768px)" srcSet={logo80} />
+              <source media="(min-width: 768px)" srcSet={logo40} />
               <Img src={logo40} alt="Logo" />
             </picture>
           </ImgLink>

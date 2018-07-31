@@ -1,13 +1,13 @@
 import React from "react";
 import Block from "../styles/Block";
 import styled from "react-emotion";
-import logo from "../assets/logo.png";
 import CardData from "./../styles/CardData";
 import Grid from "./../styles/Grid";
 import Separator from "../styles/Separator";
 import Social from "../components/Social";
 import Hobbies from "./../components/Hobbies";
 import Currently from "./../components/Currently";
+import Logo from "./../components/Logo";
 
 const Home = () => {
   return (
@@ -15,9 +15,7 @@ const Home = () => {
       <Block padded>
         <Grid>
           <CardHome>
-            <Logo>
-              <LogoImg src={logo} alt="Logo" />
-            </Logo>
+            <Logo />
             <Info>
               <Introduction>
                 My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
@@ -88,13 +86,4 @@ const CardHome = styled.div`
   @media (${props => props.theme.mq.desktop}) {
     grid-template-columns: 1fr 2fr;
   }
-`;
-
-const Logo = styled.div`
-  flex-grow: 1;
-  text-align: center;
-`;
-
-const LogoImg = styled.img`
-  width: 120px;
 `;

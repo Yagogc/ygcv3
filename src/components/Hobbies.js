@@ -1,7 +1,6 @@
 import React from "react";
 import hobbies from "../data/hobbies";
 import Block from "../styles/Block";
-import styled from "react-emotion";
 import {
   Interest,
   InterestTitle,

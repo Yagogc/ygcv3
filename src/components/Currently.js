@@ -2,7 +2,6 @@ import React from "react";
 import works from "../data/works";
 import projects from "../data/projects";
 import Block from "../styles/Block";
-import styled from "react-emotion";
 import Grid from "../styles/Grid";
 import Card from "../styles/Card";
 

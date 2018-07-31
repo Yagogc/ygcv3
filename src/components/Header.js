@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import Icon from "../styles/Icon";
 import Navigation from "./Navigation";
 import Container from "../styles/Container";
-import logo40 from "../assets/logo-40.png";
-import logo80 from "../assets/logo-80.png";
+import logo40 from "../assets/logo-40.jpg";
+import logo80 from "../assets/logo-80.jpg";
 
 const Header = () => {
   return (

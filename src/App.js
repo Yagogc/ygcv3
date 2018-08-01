@@ -10,13 +10,14 @@ import Portfolio from "./pages/Portfolio";
 import Error404 from "./pages/404";
 import theme from "./styles/theme";
 import Container from "./styles/Container";
+import ScrollToTop from "./components/ScrollToTop";
 
 class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <Router>
-          <React.Fragment>
+          <ScrollToTop>
             <Header />
             <Container>
               <Switch>
@@ -28,7 +29,7 @@ class App extends Component {
                 <Route component={Error404} />
               </Switch>
             </Container>
-          </React.Fragment>
+          </ScrollToTop>
         </Router>
       </ThemeProvider>
     );

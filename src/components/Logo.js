@@ -53,7 +53,7 @@ const Wrapper = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 196px;
+  width: 128px;
 `;
 const Toggle = styled.div`
   display: flex;

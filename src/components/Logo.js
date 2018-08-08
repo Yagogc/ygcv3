@@ -25,18 +25,26 @@ export default class Logo extends Component {
         <LogoImg src={this.state.logo} alt="Logo" />
         <Toggle>
           <ButtonGroup>
-            <Button
+            <Input
+              type="radio"
+              id="logo"
+              name="logo"
+              defaultChecked
               onClick={() => this.toggleImg(logo)}
-              isActive={this.state.logo === logo}
-            >
+            />
+            <Label htmlFor="logo">
               <ImgLogo src={IconLogo} alt="logo" />
-            </Button>
-            <Button
+            </Label>
+
+            <Input
+              type="radio"
+              id="qr"
+              name="logo"
               onClick={() => this.toggleImg(qr)}
-              isActive={this.state.logo === qr}
-            >
+            />
+            <Label htmlFor="qr">
               <Icon icon="qrcode" />
-            </Button>
+            </Label>
           </ButtonGroup>
         </Toggle>
       </Wrapper>
@@ -67,8 +75,7 @@ const ButtonGroup = styled.div`
   padding: 4px;
 `;
 
-const Button = styled.button`
-  background: ${props => (props.isActive ? props.theme.color.ui2 : "none")};
+const Label = styled.label`
   border: none;
   color: white;
   font-size: 22px;
@@ -76,6 +83,12 @@ const Button = styled.button`
   cursor: pointer;
   &:hover {
     background: ${props => props.theme.color.ui4};
+  }
+`;
+const Input = styled.input`
+  display: none;
+  &:checked + label {
+    background: ${props => props.theme.color.ui2};
   }
 `;
 

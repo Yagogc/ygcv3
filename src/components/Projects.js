@@ -29,7 +29,7 @@ export default class Projects extends Component {
       this.setState({
         disabled: false
       });
-    }, 500);
+    }, 600);
     if (isProfessional === undefined) {
       this.setState({
         filtered: this.state.projects
@@ -161,6 +161,7 @@ const Label = styled.label`
   font-size: 16px;
   padding: 10px;
   cursor: pointer;
+  transition: opacity 0.3s ease;
   &:hover {
     background: ${props => props.theme.color.ui4};
   }
@@ -172,5 +173,9 @@ const Input = styled.input`
   display: none;
   &:checked + label {
     background: ${props => props.theme.color.ui2};
+  }
+  &:disabled + label {
+    opacity: 0.3;
+    cursor: progress;
   }
 `;

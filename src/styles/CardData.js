@@ -8,7 +8,11 @@ const CardData = props => {
   return (
     <CardWrapper {...props}>
       <Icon icon={props.icon} />
-      <CardTitle>{props.children}</CardTitle>
+      {props.url ? (
+        <CardTitleLink href={props.url}>{props.children}</CardTitleLink>
+      ) : (
+        <CardTitle>{props.children}</CardTitle>
+      )}
     </CardWrapper>
   );
 };
@@ -30,4 +34,12 @@ const CardTitle = styled.span`
   margin-left: 5px;
   width: 100%;
   text-align: center;
+`;
+
+const CardTitleLink = styled.a`
+  margin-left: 5px;
+  width: 100%;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
 `;

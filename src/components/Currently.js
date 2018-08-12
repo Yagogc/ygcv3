@@ -33,7 +33,7 @@ const Currently = () => {
           </Card.Grid>
           <Card.Footer stext="true">
             <Card.LinkInternal to="/work">
-              More info <Card.Icon icon="plus-circle" />
+              About previous roles <Card.Icon icon="plus-circle" />
             </Card.LinkInternal>
           </Card.Footer>
         </Card.Grid>
@@ -41,7 +41,7 @@ const Currently = () => {
       <Block>
         <Card.Grid hasfooter="true">
           <Card.Header stext="true" itext="true">
-            Latest propject:
+            Latest project:
           </Card.Header>
           <Card.Grid padded="true">
             <Card.Title>
@@ -81,7 +81,7 @@ const Currently = () => {
           </Card.Grid>
           <Card.Footer stext="true">
             <Card.LinkInternal to="/portfolio">
-              More info <Card.Icon icon="plus-circle" />
+              About other projects <Card.Icon icon="plus-circle" />
             </Card.LinkInternal>
           </Card.Footer>
         </Card.Grid>

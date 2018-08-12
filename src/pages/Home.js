@@ -19,23 +19,29 @@ const Home = () => {
             <Info>
               <Introduction>
                 My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
-                specialized in HTML, CSS and JavaScript. I'm passionate about UX
-                design, responsive design and the latest web technologies.
+                specialized in React and CSS. I'm really passionate about UI
+                design, design systems, responsive design, animations and
+                CSS-in-JS. In fact, anything related in some way to CSS I'll be
+                really interested in.
+              </Introduction>
+              <Introduction>
+                I'm also interested in the latest technologies and advances in
+                the front-end field like: SSR, GraphQL or PWAs.
               </Introduction>
             </Info>
           </CardHome>
           <Data>
-            <CardData padded icon="at">
+            <CardData padded icon="at" url="mailto:info@yagogc.com">
               info@yagogc.com
             </CardData>
             <CardData padded icon="map-marker-alt">
               London
             </CardData>
-            <CardData padded icon="phone">
-              +447490303306
+            <CardData padded icon="phone" url="tel:+447490303306">
+              +44 7490 303306
             </CardData>
             <CardData padded icon="ban">
-              Not Available
+              Not available for roles
             </CardData>
           </Data>
         </Grid>
@@ -70,9 +76,8 @@ const Data = styled.div`
 
 const Info = styled.div`
   flex-grow: 2;
-  display: grid;
-  grid-auto-rows: 1fr;
-  grid-gap: ${props => props.theme.ws.padding};
+  display: flex;
+  flex-direction: column;
 `;
 
 const CardHome = styled.div`

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "react-emotion";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo@2x.png";
 import qr from "../assets/qr.svg";
 import IconLogo from "../assets/Icon.svg";
 import Icon from "../styles/Icon";

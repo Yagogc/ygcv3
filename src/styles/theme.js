@@ -32,7 +32,7 @@ const theme = {
   brands: {
     facebook: "#3b5998",
     google: "#FF5733",
-    github: "#6e5494",
+    github: "#6e3394",
     linkedin: "#0077B5"
   }
 };

@@ -21,7 +21,7 @@ const Header = () => {
             </picture>
           </ImgLink>
           <Navigation />
-          <Button href="#">
+          <Button href="https://yagogc.github.io/_public/CV_YagoGonzalez.pdf">
             <Icon icon="file-pdf" />
             <span>CV</span>
           </Button>

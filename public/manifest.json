@@ -1,10 +1,26 @@
 {
-  "short_name": "Yago Gonzalez",
+  "short_name": "Yago G.",
   "name": "Yago Gonzalez Personal Website",
   "icons": [{
     "src": "favicon.ico",
-    "sizes": "64x64 32x32 24x24 16x16",
+    "sizes": "32x32 16x16",
     "type": "image/x-icon"
+  }, {
+    "src": "images/logo@05x.png",
+    "sizes": "64x64",
+    "type": "image/png"
+  }, {
+    "src": "images/logo@1x.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "images/logo@2x.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }, {
+    "src": "images/logo@4x.png",
+    "sizes": "512x512",
+    "type": "image/png"
   }],
   "start_url": "./index.html",
   "display": "standalone",

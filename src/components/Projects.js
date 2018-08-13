@@ -7,6 +7,8 @@ import Icon from "./../styles/Icon";
 import FlipMove from "react-flip-move";
 export default class Projects extends Component {
   state = {
+    filterByProfesional: [],
+    filterByPersonal: [],
     filtered: [],
     projects: [],
     disabled: false
@@ -16,9 +18,17 @@ export default class Projects extends Component {
       project.id = i;
       return project;
     });
+    const filterByPersonal = projectsId.filter(
+      project => project.company === ""
+    );
+    const filterByProfesional = projectsId.filter(
+      project => project.company !== ""
+    );
     this.setState({
       projects: projectsId,
-      filtered: projectsId
+      filtered: projectsId,
+      filterByProfesional,
+      filterByPersonal
     });
   }
   filter = isProfessional => {
@@ -29,7 +39,7 @@ export default class Projects extends Component {
       this.setState({
         disabled: false
       });
-    }, 600);
+    }, 500);
     if (isProfessional === undefined) {
       this.setState({
         filtered: this.state.projects
@@ -37,19 +47,13 @@ export default class Projects extends Component {
       return;
     }
     if (!isProfessional) {
-      const filtered = this.state.projects.filter(
-        project => project.company === ""
-      );
       this.setState({
-        filtered
+        filtered: this.state.filterByPersonal
       });
     }
     if (isProfessional) {
-      const filtered = this.state.projects.filter(
-        project => project.company !== ""
-      );
       this.setState({
-        filtered
+        filtered: this.state.filterByProfesional
       });
     }
   };

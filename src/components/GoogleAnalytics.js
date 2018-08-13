@@ -4,9 +4,9 @@ import ReactGA from "react-ga";
 
 ReactGA.initialize("UA-123920754-1");
 
-const tracking = path => {
+const tracking = location => {
   if (process.env.NODE_ENV === "production") {
-    ReactGA.pageview(path);
+    ReactGA.pageview(location.pathname);
   }
 };
 class GoogleAnalytics extends Component {

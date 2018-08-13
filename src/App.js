@@ -11,25 +11,28 @@ import Error404 from "./pages/404";
 import theme from "./styles/theme";
 import Container from "./styles/Container";
 import ScrollToTop from "./components/ScrollToTop";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <Router>
-          <ScrollToTop>
-            <Header />
-            <Container>
-              <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/skills" component={Skills} />
-                <Route path="/work" component={Work} />
-                <Route path="/education" component={Education} />
-                <Route path="/portfolio" component={Portfolio} />
-                <Route component={Error404} />
-              </Switch>
-            </Container>
-          </ScrollToTop>
+          <GoogleAnalytics>
+            <ScrollToTop>
+              <Header />
+              <Container>
+                <Switch>
+                  <Route path="/" exact component={Home} />
+                  <Route path="/skills" component={Skills} />
+                  <Route path="/work" component={Work} />
+                  <Route path="/education" component={Education} />
+                  <Route path="/portfolio" component={Portfolio} />
+                  <Route component={Error404} />
+                </Switch>
+              </Container>
+            </ScrollToTop>
+          </GoogleAnalytics>
         </Router>
       </ThemeProvider>
     );

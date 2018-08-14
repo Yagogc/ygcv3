@@ -31,7 +31,7 @@ const theme = {
   },
   brands: {
     facebook: "#3b5998",
-    google: "#FF5733",
+    google: "#E02900",
     github: "#644D89",
     linkedin: "#0077B5"
   }

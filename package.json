@@ -13,6 +13,7 @@
     "emotion": "^9.2.6",
     "emotion-theming": "^9.2.6",
     "polished": "^1.9.3",
+    "raven-js": "^3.26.4",
     "react": "^16.4.1",
     "react-app-rewire-preload-plugin": "^1.0.0",
     "react-dom": "^16.4.1",

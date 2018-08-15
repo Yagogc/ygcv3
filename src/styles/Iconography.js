@@ -32,7 +32,8 @@ import {
   faPlusCircle,
   faQrcode,
   faImage,
-  faGripVertical
+  faGripVertical,
+  faExclamationTriangle
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
@@ -87,7 +88,8 @@ const Iconography = () => {
     faPlusCircle,
     faQrcode,
     faImage,
-    faGripVertical
+    faGripVertical,
+    faExclamationTriangle
   );
 };
 

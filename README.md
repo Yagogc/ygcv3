@@ -17,6 +17,7 @@ The project was created with [Create React App](https://github.com/facebookincub
 - (13/08/18) ✔️ Finish main content
 - (13/08/18) ✔️ Add Google Analitycs
 - (15/08/18) ✔️ Add Sentry
+- Add 404 page
 - Add Code Splitting
 - Add Unit Test
 - Add End2End Test

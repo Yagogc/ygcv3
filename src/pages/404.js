@@ -10,7 +10,9 @@ const Error404 = () => {
       <Wrapper>
         <h1>Page not found!</h1>
         <Img src={blackhole} alt="Blackhole" />
-        <p>But you've found a black hole!</p>
+        <p>
+          But you've found a <b>black hole</b>!
+        </p>
         <p>
           <Link to="/">Go back home</Link> before you fall into the event
           horizon!

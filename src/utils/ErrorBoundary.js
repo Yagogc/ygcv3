@@ -8,12 +8,16 @@ class ErrorBoundary extends Component {
 
   componentDidCatch(error, errorInfo) {
     this.setState({ error });
-    Raven.captureException(error, { extra: errorInfo });
+    if (process.env.NODE_ENV === "production") {
+      Raven.captureException(error, { extra: errorInfo });
+    }
   }
 
   handleClick = () => {
-    Raven.lastEventId();
-    Raven.showReportDialog();
+    if (process.env.NODE_ENV === "production") {
+      Raven.lastEventId();
+      Raven.showReportDialog();
+    }
   };
 
   render() {

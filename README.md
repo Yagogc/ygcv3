@@ -15,14 +15,18 @@ The project was created with [Create React App](https://github.com/facebookincub
 ## Roadmap
 
 - (13/08/18) ✔️ Finish main content
-- (13/08/18) ✔️ Add Google Analitycs
-- (15/08/18) ✔️ Add Sentry
-- Add 404 page
+- (13/08/18) ✔️ Integration with Google Analitycs
+- (15/08/18) ✔️ Integration with Sentry
+- (16/08/18) ✔️ Integration with Pingdom
+- (16/08/18) ✔️ Update 404 page
+- Add more Google Analitycs events
+- Centralize all alerts from GA, Sentry, Pingdom.
 - Add Code Splitting
+- Refactor Styles
 - Add Unit Test
 - Add End2End Test
-- Refactor Styles
 - Add Storybook/Styleguidist/Docz?
+- Add Blog (with GraphCMS?)
 - Move to Next.js or, most probably, Gatsby.js
 
 ## Available Scripts

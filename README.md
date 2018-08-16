@@ -15,11 +15,11 @@ The project was created with [Create React App](https://github.com/facebookincub
 ## Roadmap
 
 - (13/08/18) ✔️ Finish main content
-- (13/08/18) ✔️ Integration with Google Analitycs
+- (13/08/18) ✔️ Integration with Google Analytics
 - (15/08/18) ✔️ Integration with Sentry
 - (16/08/18) ✔️ Integration with Pingdom
 - (16/08/18) ✔️ Update 404 page
-- Add more Google Analitycs events
+- Add more Google Analytics events
 - Centralize all alerts from GA, Sentry, Pingdom.
 - Add Code Splitting
 - Refactor Styles

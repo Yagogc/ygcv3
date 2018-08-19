@@ -1,11 +1,12 @@
 import { Component } from "react";
 import { withRouter } from "react-router-dom";
 import ReactGA from "react-ga";
+import { Cookies } from "js-cookie";
 
 ReactGA.initialize("UA-123920754-1");
 
 const tracking = location => {
-  if (process.env.NODE_ENV === "production") {
+  if (process.env.NODE_ENV === "production" && Cookies.get("ConsentCookie")) {
     ReactGA.pageview(location.pathname);
   }
 };

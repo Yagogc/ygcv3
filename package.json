@@ -12,6 +12,7 @@
     "@fortawesome/react-fontawesome": "0.1.0",
     "emotion": "^9.2.6",
     "emotion-theming": "^9.2.6",
+    "js-cookie": "^2.2.0",
     "polished": "^1.9.3",
     "raven-js": "^3.26.4",
     "react": "^16.4.1",

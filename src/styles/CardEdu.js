@@ -3,6 +3,7 @@ import React from "react";
 import styled from "react-emotion";
 
 import Icon from "./Icon";
+import { GADownload } from "../components/GoogleAnalytics";
 
 const CardEdu = props => {
   return (
@@ -23,7 +24,7 @@ const CardEdu = props => {
           {props.institution} - {props.location}
         </Location>
       </Info>
-      <Download href={props.downloadUrl}>
+      <Download href={props.downloadUrl} onClick={() => GADownload(props.name)}>
         Diploma <Icon icon="file-pdf" />
       </Download>
     </Wrapper>

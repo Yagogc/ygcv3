@@ -25,4 +25,15 @@ class GoogleAnalytics extends Component {
   }
 }
 
+const GADownload = action => {
+  if (process.env.NODE_ENV === "production" && Cookies.get("ConsentCookie")) {
+    ReactGA.event({
+      category: "Download",
+      action
+    });
+  }
+};
+
 export default withRouter(GoogleAnalytics);
+
+export { GADownload };

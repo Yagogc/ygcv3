@@ -7,6 +7,7 @@ import Navigation from "./Navigation";
 import Container from "../styles/Container";
 import logo40 from "../assets/logo-40.jpg";
 import logo80 from "../assets/logo-80.jpg";
+import { GADownload } from "./GoogleAnalytics";
 
 const Header = () => {
   return (
@@ -21,7 +22,10 @@ const Header = () => {
             </picture>
           </ImgLink>
           <Navigation />
-          <Button href="https://yagogc.github.io/_public/CV_YagoGonzalez.pdf">
+          <Button
+            href="https://yagogc.github.io/_public/CV_YagoGonzalez.pdf"
+            onClick={() => GADownload("CV")}
+          >
             <Icon icon="file-pdf" />
             <span>CV</span>
           </Button>

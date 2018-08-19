@@ -19,7 +19,8 @@ The project was created with [Create React App](https://github.com/facebookincub
 - (15/08/18) ✔️ Integration with Sentry
 - (16/08/18) ✔️ Integration with Pingdom
 - (16/08/18) ✔️ Update 404 page
-- Add more Google Analytics events
+- (19/08/18) ✔️ Add cookie consent.
+- (20/08/18) ✔️ Add more Google Analytics events
 - Centralize all alerts from GA, Sentry, Pingdom.
 - Add Code Splitting
 - Refactor Styles

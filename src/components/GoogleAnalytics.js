@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { withRouter } from "react-router-dom";
 import ReactGA from "react-ga";
-import { Cookies } from "js-cookie";
+import Cookies from "js-cookie";
 
 ReactGA.initialize("UA-123920754-1");
 

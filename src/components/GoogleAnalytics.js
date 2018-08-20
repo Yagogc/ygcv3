@@ -6,7 +6,7 @@ import Cookies from "js-cookie";
 ReactGA.initialize("UA-123920754-1");
 
 const tracking = location => {
-  if (process.env.NODE_ENV === "production" && Cookies.get("ConsentCookie")) {
+  if (process.env.NODE_ENV === "production" && Cookies.get("CookieConsent")) {
     ReactGA.pageview(location.pathname);
   }
 };
@@ -26,7 +26,7 @@ class GoogleAnalytics extends Component {
 }
 
 const GADownload = action => {
-  if (process.env.NODE_ENV === "production" && Cookies.get("ConsentCookie")) {
+  if (process.env.NODE_ENV === "production" && Cookies.get("CookieConsent")) {
     ReactGA.event({
       category: "Download",
       action

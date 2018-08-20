@@ -46,8 +46,6 @@ class CookieConsent extends Component {
     const docHeightQuarter = document.body.scrollHeight / 4;
     const scrolled = window.scrollY;
     const windowQuarter = window.innerHeight / 4;
-    console.log({ scrolled });
-    console.log({ docHeightQuarter });
 
     if (scrolled > windowQuarter && scrolled > docHeightQuarter) {
       this.accept();
@@ -60,7 +58,6 @@ class CookieConsent extends Component {
   accept = () => {
     const { cookieName, expires, hideOnAccept, onAccept } = this.props;
 
-    console.log("Cookies accepted");
     // fire onAccept
     onAccept();
     // remove listener if set

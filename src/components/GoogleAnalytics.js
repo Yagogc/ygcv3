@@ -3,7 +3,9 @@ import { withRouter } from "react-router-dom";
 import ReactGA from "react-ga";
 import Cookies from "js-cookie";
 
-ReactGA.initialize("UA-123920754-1");
+ReactGA.initialize("UA-123920754-1", {
+  debug: false
+});
 
 const tracking = location => {
   if (process.env.NODE_ENV === "production" && Cookies.get("CookieConsent")) {

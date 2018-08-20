@@ -24,7 +24,10 @@ const CardEdu = props => {
           {props.institution} - {props.location}
         </Location>
       </Info>
-      <Download href={props.downloadUrl} onClick={() => GADownload(props.name)}>
+      <Download
+        href={props.downloadUrl}
+        onClick={() => GADownload(`${props.name} Diploma`)}
+      >
         Diploma <Icon icon="file-pdf" />
       </Download>
     </Wrapper>

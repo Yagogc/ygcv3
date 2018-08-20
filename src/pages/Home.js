@@ -59,7 +59,9 @@ const Home = () => {
 export default Home;
 
 const Name = styled.span`
-  font-family: "Marck Script";
+  font-family: "Marck Script", "Open sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif;
   font-size: 26px;
 `;
 const Introduction = styled.p`

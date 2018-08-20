@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import styled from "react-emotion";
 import logo from "../assets/logo@2x.png";
 import qr from "../assets/qr.svg";
-import IconLogo from "../assets/Icon.svg";
+import IconLogo from "../assets/Icon";
 import Icon from "../styles/Icon";
-
 export default class Logo extends Component {
   state = {
     logo: logo
@@ -33,7 +32,9 @@ export default class Logo extends Component {
               onClick={() => this.toggleImg(logo)}
             />
             <Label htmlFor="logo">
-              <ImgLogo src={IconLogo} alt="logo" />
+              <ImgLogo>
+                <IconLogo />
+              </ImgLogo>
             </Label>
 
             <Input
@@ -92,8 +93,9 @@ const Input = styled.input`
   }
 `;
 
-const ImgLogo = styled.img`
+const ImgLogo = styled.span`
   width: 22px;
   color: white;
   vertical-align: -0.125em;
+  display: flex;
 `;

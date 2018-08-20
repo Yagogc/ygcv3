@@ -6,7 +6,8 @@ import Cookies from "js-cookie";
 import posed from "react-pose";
 class CookieConsent extends Component {
   state = {
-    visible: false
+    visible: false,
+    pose: "visible"
   };
 
   static propTypes = {
@@ -66,10 +67,12 @@ class CookieConsent extends Component {
     window.removeEventListener("scroll", this.handleScroll);
 
     Cookies.set(cookieName, true, { expires: expires });
-
-    if (hideOnAccept) {
-      this.setState({ visible: false });
-    }
+    this.setState({ pose: "hidden" });
+    setTimeout(() => {
+      if (hideOnAccept) {
+        this.setState({ visible: false });
+      }
+    }, 1000);
   };
 
   render() {
@@ -80,7 +83,7 @@ class CookieConsent extends Component {
     return (
       <Modal>
         <ContainerWrapper>
-          <Wrapper initialPose="hidden" pose="visible">
+          <Wrapper initialPose="hidden" pose={this.state.pose}>
             <TopBar />
             <Content>
               <P>
@@ -156,14 +159,19 @@ const config = {
     opacity: 1,
     y: 0,
     transition: {
-      default: props => ({
+      default: () => ({
         duration: 1000
       })
     }
   },
   hidden: {
     opacity: 0,
-    y: 100
+    y: 100,
+    transition: {
+      default: () => ({
+        duration: 1000
+      })
+    }
   }
 };
 const Wrapper = posed(CookieWrapper)(config);

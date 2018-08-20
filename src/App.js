@@ -14,6 +14,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import ErrorBoundary from "./utils/ErrorBoundary";
 import CookieConsent from "./utils/CookieConsent";
+import Navigation from "./components/Navigation";
+import { Mobile } from "./utils/MediaQuery";
 
 class App extends Component {
   render() {
@@ -34,6 +36,9 @@ class App extends Component {
                     <Route component={Error404} />
                   </Switch>
                 </Container>
+                <Mobile>
+                  <Navigation mobile />
+                </Mobile>
                 <CookieConsent />
               </ScrollToTop>
             </GoogleAnalytics>

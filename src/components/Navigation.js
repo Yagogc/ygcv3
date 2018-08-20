@@ -2,14 +2,17 @@ import React from "react";
 import styled from "react-emotion";
 import { Link as LinkC, withRouter } from "react-router-dom";
 import Icon from "../styles/Icon";
+import posed from "react-pose";
 
 const isActive = (path, currentPath) =>
   path === currentPath ? "true" : undefined;
 
 const Navigation = props => {
   const { pathname } = props.location;
+  const { mobile } = props;
+
   return (
-    <Wrapper>
+    <Wrapper initialPose={mobile ? "exit" : "enter"} pose="enter">
       <Link to="/" current={isActive("/", pathname)}>
         <Icon icon="user-circle" />
         <LinkTitle>Home</LinkTitle>
@@ -32,7 +35,7 @@ const Navigation = props => {
 
 export default withRouter(Navigation);
 
-const Wrapper = styled.nav`
+const NavWrapper = styled.nav`
   height: 100%;
   display: flex;
   @media (${props => props.theme.mq.mobile}) {
@@ -45,6 +48,7 @@ const Wrapper = styled.nav`
     background: ${props => props.theme.color.ui4};
     color: ${props => props.theme.color.text1};
     box-shadow: inset 0 1px 0px 0px rgba(255, 255, 255, 0.1);
+    z-index: 100;
   }
 `;
 
@@ -97,3 +101,26 @@ const Link = styled(LinkC)`
     z-index: 4;
   }
 `;
+
+const config = {
+  enter: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      default: () => ({
+        duration: 500
+      })
+    }
+  },
+  exit: {
+    opacity: 0,
+    y: 100,
+    transition: {
+      default: () => ({
+        duration: 500
+      })
+    }
+  }
+};
+
+const Wrapper = posed(NavWrapper)(config);

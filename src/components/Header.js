@@ -8,10 +8,12 @@ import Container from "../styles/Container";
 import logo40 from "../assets/logo-40.jpg";
 import logo80 from "../assets/logo-80.jpg";
 import { GADownload } from "./GoogleAnalytics";
+import posed from "react-pose";
+import { Desktop } from "../utils/MediaQuery";
 
 const Header = () => {
   return (
-    <Wrapper>
+    <Wrapper initialPose="exit" pose="enter">
       <Container horizontal header>
         <InnerWrapper>
           <ImgLink to="/">
@@ -21,7 +23,9 @@ const Header = () => {
               <Img src={logo40} alt="Logo" />
             </picture>
           </ImgLink>
-          <Navigation />
+          <Desktop>
+            <Navigation />
+          </Desktop>
           <Button
             href="https://yagogc.github.io/_public/CV_YagoGonzalez.pdf"
             onClick={() => GADownload("CV")}
@@ -37,9 +41,9 @@ const Header = () => {
 
 export default Header;
 
-const Wrapper = styled.header`
+const HeaderWrapper = styled.header`
   position: fixed;
-  top: 0;
+  top: -0.5px;
   left: 0;
   width: 100%;
   height: 60px;
@@ -47,6 +51,7 @@ const Wrapper = styled.header`
   color: ${props => props.theme.color.text1};
   box-shadow: inset 0 -1px 0px 0px rgba(255, 255, 255, 0.1);
   z-index: 100;
+  overflow: hidden;
 `;
 const InnerWrapper = styled.header`
   display: flex;
@@ -102,3 +107,25 @@ const ImgLink = styled(Link)`
 const Img = styled.img`
   height: 100%;
 `;
+
+const config = {
+  enter: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      default: () => ({
+        duration: 500
+      })
+    }
+  },
+  exit: {
+    opacity: 0,
+    y: -100,
+    transition: {
+      default: () => ({
+        duration: 500
+      })
+    }
+  }
+};
+const Wrapper = posed(HeaderWrapper)(config);

@@ -108,10 +108,10 @@ export default CookieConsent;
 
 const Modal = styled.div`
   position: fixed;
-  top: 0;
-  height: 100vh;
+  bottom: 0;
+  height: auto;
   width: 100%;
-  padding: 60px 0;
+  padding-bottom: 60px;
   pointer-events: none;
   @media (${props => props.theme.mq.desktop}) {
     padding-bottom: 0px;

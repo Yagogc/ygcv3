@@ -5,7 +5,6 @@ import { Card } from "../styles/CardProject";
 import styled from "react-emotion";
 import Icon from "./../styles/Icon";
 import anime from "animejs";
-import FlipMove from "react-flip-move";
 import { Flipper, Flipped } from "react-flip-toolkit";
 export default class Projects extends Component {
   state = {

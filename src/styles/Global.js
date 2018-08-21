@@ -14,9 +14,6 @@ const GlobalStyles = () => {
     background: ${theme.color.ui1};
     color: ${theme.color.text1}
   }
-  body {
-    padding: 60px 0;
-  }
 `;
 };
 

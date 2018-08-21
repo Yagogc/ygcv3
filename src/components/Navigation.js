@@ -39,10 +39,9 @@ const NavWrapper = styled.nav`
   height: 100%;
   display: flex;
   @media (${props => props.theme.mq.mobile}) {
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     height: 60px;
     justify-content: space-between;
     background: ${props => props.theme.color.ui4};

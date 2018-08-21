@@ -42,9 +42,8 @@ const Header = () => {
 export default Header;
 
 const HeaderWrapper = styled.header`
-  position: fixed;
+  position: sticky;
   top: -0.5px;
-  left: 0;
   width: 100%;
   height: 60px;
   background: ${props => props.theme.color.ui4};

@@ -4,14 +4,17 @@ import Grid from "./../styles/Grid";
 import { Card } from "../styles/CardProject";
 import styled from "react-emotion";
 import Icon from "./../styles/Icon";
+import anime from "animejs";
 import FlipMove from "react-flip-move";
+import { Flipper, Flipped } from "react-flip-toolkit";
 export default class Projects extends Component {
   state = {
     filterByProfesional: [],
     filterByPersonal: [],
     filtered: [],
     projects: [],
-    disabled: false
+    disabled: false,
+    type: ""
   };
   componentDidMount() {
     const projectsId = projects.map((project, i) => {
@@ -31,31 +34,52 @@ export default class Projects extends Component {
       filterByPersonal
     });
   }
-  filter = isProfessional => {
-    this.setState({
-      disabled: true
+  filter = type => {
+    switch (type) {
+      case "all":
+        this.setState({
+          filtered: this.state.projects,
+          type
+        });
+        break;
+      case "personal":
+        this.setState({
+          filtered: this.state.filterByPersonal,
+          type
+        });
+        break;
+      case "professional":
+        this.setState({
+          filtered: this.state.filterByProfesional,
+          type
+        });
+        break;
+      default:
+        break;
+    }
+  };
+
+  onElementAppear = (el, index) => {
+    anime({
+      targets: el,
+      opacity: [0, 1],
+      scale: [0, 1],
+      delay: index * 20,
+      duration: 150,
+      easing: "linear"
     });
-    setTimeout(() => {
-      this.setState({
-        disabled: false
-      });
-    }, 500);
-    if (isProfessional === undefined) {
-      this.setState({
-        filtered: this.state.projects
-      });
-      return;
-    }
-    if (!isProfessional) {
-      this.setState({
-        filtered: this.state.filterByPersonal
-      });
-    }
-    if (isProfessional) {
-      this.setState({
-        filtered: this.state.filterByProfesional
-      });
-    }
+  };
+
+  onElementExit = (el, index, removeElement) => {
+    anime({
+      targets: el,
+      opacity: 0,
+      scale: 0,
+      duration: 150,
+      complete: removeElement,
+      delay: index * 20,
+      easing: "linear"
+    });
   };
   render() {
     return (
@@ -68,7 +92,7 @@ export default class Projects extends Component {
               name="projects"
               disabled={this.state.disabled}
               defaultChecked
-              onClick={() => this.filter()}
+              onClick={() => this.filter("all")}
             />
             <Label htmlFor="all">
               <Icon icon="grip-vertical" /> All
@@ -76,13 +100,13 @@ export default class Projects extends Component {
 
             <Input
               type="radio"
-              id="profesional"
+              id="professional"
               name="projects"
               disabled={this.state.disabled}
-              onClick={() => this.filter(true)}
+              onClick={() => this.filter("professional")}
             />
-            <Label htmlFor="profesional">
-              <Icon icon="building" /> Profesional
+            <Label htmlFor="professional">
+              <Icon icon="building" /> Professional
             </Label>
 
             <Input
@@ -90,17 +114,23 @@ export default class Projects extends Component {
               id="personal"
               name="projects"
               disabled={this.state.disabled}
-              onClick={() => this.filter(false)}
+              onClick={() => this.filter("personal")}
             />
             <Label htmlFor="personal">
               <Icon icon="user" /> Personal
             </Label>
           </ButtonGroup>
         </Toggle>
-        <Grid dColumns="2" style={{ position: "relative" }}>
-          <FlipMove typeName={null}>
-            {this.state.filtered.map(project => (
-              <Card.Wrapper key={project.id}>
+        <FlipperWrapper dColumns="2" flipKey={this.state.type}>
+          {this.state.filtered.map((project, i) => (
+            <Flipped
+              flipId={project.id.toString()}
+              key={project.id}
+              onDelayedAppear={this.onElementAppear}
+              onExit={this.onElementExit}
+              delay={i * 3}
+            >
+              <Card.Wrapper>
                 {project.name ? (
                   <Card.Title>{project.name}</Card.Title>
                 ) : (
@@ -139,9 +169,9 @@ export default class Projects extends Component {
                   })}
                 </Card.SkillList>
               </Card.Wrapper>
-            ))}
-          </FlipMove>
-        </Grid>
+            </Flipped>
+          ))}
+        </FlipperWrapper>
       </Grid>
     );
   }
@@ -182,4 +212,14 @@ const Input = styled.input`
     opacity: 0.3;
     cursor: progress;
   }
+`;
+const FlipperWrapper = styled(Flipper)`
+  display: grid;
+  grid-template-columns: repeat(${props =>
+    props.mColumns ? props.mColumns : "1"}, 1fr);
+  grid-gap: 10px;
+  
+  @media (${props => props.theme.mq.desktop}) {
+    grid-template-columns: repeat(${props =>
+      props.dColumns ? props.dColumns : "1"}, 1fr)
 `;

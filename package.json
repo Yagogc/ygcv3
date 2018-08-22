@@ -21,6 +21,7 @@
     "react-dom": "^16.4.1",
     "react-emotion": "^9.2.6",
     "react-flip-toolkit": "^4.0.2",
+    "react-flippy": "^0.1.2",
     "react-ga": "^2.5.3",
     "react-pose": "^2.2.0",
     "react-pose-text": "^0.2.0",

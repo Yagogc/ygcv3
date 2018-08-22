@@ -23,6 +23,7 @@
     "react-flip-toolkit": "^4.0.2",
     "react-ga": "^2.5.3",
     "react-pose": "^2.2.0",
+    "react-pose-text": "^0.2.0",
     "react-responsive": "^5.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",

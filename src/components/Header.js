@@ -9,7 +9,8 @@ import logo40 from "../assets/logo-40.jpg";
 import logo80 from "../assets/logo-80.jpg";
 import { GADownload } from "./GoogleAnalytics";
 import posed from "react-pose";
-import { Desktop } from "../utils/MediaQuery";
+import { Desktop, Mobile } from "../utils/MediaQuery";
+import Name from "./Name";
 
 const Header = () => {
   return (
@@ -23,6 +24,11 @@ const Header = () => {
               <Img src={logo40} alt="Logo" />
             </picture>
           </ImgLink>
+          <Mobile>
+            <div>
+              <Name />
+            </div>
+          </Mobile>
           <Desktop>
             <Navigation />
           </Desktop>

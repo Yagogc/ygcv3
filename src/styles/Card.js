@@ -70,7 +70,7 @@ const SkillItem = styled.li`
   padding: 5px 10px;
 `;
 
-const Img = styled.div`
+const WrapperImg = styled.div`
   min-height: ${props => (props.small ? "100px" : "200px")};
   max-height: ${props => (props.small ? "100px" : "200px")};
   background: linear-gradient(
@@ -88,8 +88,16 @@ const Img = styled.div`
   justify-content: end;
   align-items: end;
   grid-auto-flow: column;
+  position: relative;
+  overflow: hidden;
 `;
 
+const Img = styled.img`
+  position: absolute;
+  object-position: top;
+  top: 0;
+  width: 100%;
+`;
 const ImgLink = styled.a`
   color: ${props => props.theme.color.text1};
   text-decoration: none;
@@ -100,6 +108,7 @@ const ImgLink = styled.a`
   padding: 5px 10px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
+  z-index: 10;
 
   &:hover {
     background: ${props =>
@@ -128,7 +137,8 @@ const Card = {
   CompanyName: CompanyName,
   SkillList: SkillList,
   SkillItem: SkillItem,
-  Img: Img,
+  WrapperImg,
+  Img,
   ImgLink: ImgLink,
   LinkInternal: LinkInternal,
   LinkExternal: LinkExternal,

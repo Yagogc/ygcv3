@@ -1,6 +1,5 @@
 import styled from "react-emotion";
 import { darken } from "polished";
-
 import Icon from "./Icon";
 
 const Wrapper = styled.div`
@@ -43,30 +42,32 @@ const SkillItem = styled.li`
   padding: 5px 10px;
 `;
 
-const Img = styled.div`
+const WrapperImg = styled.div`
   min-height: ${props => (props.small ? "100px" : "200px")};
   max-height: ${props => (props.small ? "100px" : "200px")};
   background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 0.65) 100%
-    ),
-    url(${props => (props.bg ? props.bg : "")});
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
   display: grid;
+  position: relative;
   grid-gap: 10px;
+  overflow: hidden;
   justify-content: end;
   align-items: end;
   grid-auto-flow: column;
-  ${"" /* flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-end; */};
 `;
-
+const Img = styled.img`
+  position: absolute;
+  object-position: top;
+  top: 0;
+  width: 100%;
+`;
 const Link = styled.a`
   color: ${props => props.theme.color.text1};
   text-decoration: none;
@@ -77,6 +78,7 @@ const Link = styled.a`
   padding: 5px 10px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
+  z-index: 10;
 
   &:hover {
     background: ${props =>
@@ -91,7 +93,8 @@ const Card = {
   CompanyName: CompanyName,
   SkillList: SkillList,
   SkillItem: SkillItem,
-  Img: Img,
+  WrapperImg,
+  Img,
   Link: Link,
   Icon: styled(Icon)``,
   Info: styled.div`

@@ -146,7 +146,11 @@ export default class Projects extends Component {
                     <Card.CompanyName>Personal Project</Card.CompanyName>
                   </Card.Company>
                 )}
-                <Card.Img bg={require(`../assets/portfolio/${project.img}`)}>
+                <Card.WrapperImg>
+                  <Card.Img
+                    src={require(`../assets/portfolio/${project.img}`)}
+                  />
+                  )}
                   {project.link && (
                     <Card.Link href={project.link}>
                       <Card.Icon icon="globe" mright="true" />Link
@@ -161,7 +165,7 @@ export default class Projects extends Component {
                       />Git
                     </Card.Link>
                   )}
-                </Card.Img>
+                </Card.WrapperImg>
                 <Card.SkillList>
                   {project.skills.map((skill, i) => {
                     return <Card.SkillItem key={i}>{skill}</Card.SkillItem>;

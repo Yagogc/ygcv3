@@ -58,10 +58,8 @@ const Currently = () => {
                 <Card.CompanyName>Personal Project</Card.CompanyName>
               </Card.Label>
             )}
-            <Card.Img
-              small="true"
-              bg={require(`../assets/portfolio/${project.img}`)}
-            >
+            <Card.WrapperImg small="true">
+              <Card.Img src={require(`../assets/portfolio/${project.img}`)} />
               {project.link && (
                 <Card.ImgLink href={project.link}>
                   <Card.Icon icon="globe" mright="true" />Link
@@ -72,7 +70,7 @@ const Currently = () => {
                   <Card.Icon icon="github-alt" iconType="fab" mright="true" />Git
                 </Card.ImgLink>
               )}
-            </Card.Img>
+            </Card.WrapperImg>
             <Card.SkillList>
               {project.skills.map((skill, i) => {
                 return <Card.SkillItem key={i}>{skill}</Card.SkillItem>;

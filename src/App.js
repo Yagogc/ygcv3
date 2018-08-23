@@ -1,13 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "emotion-theming";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import Skills from "./pages/Skills";
-import Work from "./pages/Work";
-import Education from "./pages/Education";
-import Portfolio from "./pages/Portfolio";
-import Error404 from "./pages/404";
 import theme from "./styles/theme";
 import Container from "./styles/Container";
 import ScrollToTop from "./components/ScrollToTop";
@@ -16,6 +10,7 @@ import ErrorBoundary from "./utils/ErrorBoundary";
 import CookieConsent from "./utils/CookieConsent";
 import Navigation from "./components/Navigation";
 import { Mobile } from "./utils/MediaQuery";
+import Routes from "./Routes";
 
 class App extends Component {
   render() {
@@ -27,14 +22,7 @@ class App extends Component {
               <ScrollToTop>
                 <Header />
                 <Container>
-                  <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/skills" component={Skills} />
-                    <Route path="/work" component={Work} />
-                    <Route path="/education" component={Education} />
-                    <Route path="/portfolio" component={Portfolio} />
-                    <Route component={Error404} />
-                  </Switch>
+                  <Routes />
                 </Container>
                 <Mobile>
                   <Navigation mobile />

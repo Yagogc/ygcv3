@@ -14,6 +14,9 @@ const GlobalStyles = () => {
     background: ${theme.color.ui1};
     color: ${theme.color.text1}
   }
+  #root {
+    min-height:100vh;
+  }
 `;
 };
 

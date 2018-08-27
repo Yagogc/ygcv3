@@ -10,7 +10,7 @@ export default Container;
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: ${({ main }) => (main ? "calc(100vh - 120px)" : "100%")};
   margin: 0 auto;
   max-width: ${props => props.theme.container.width};
   padding-left: ${props =>
@@ -25,5 +25,6 @@ const Wrapper = styled.div`
   @media (${props => props.theme.mq.desktop}) {
     ${props =>
       props.header ? `padding-right: ${props.theme.container.padding}` : ""};
+    ${props => (props.main ? "calc(100vh - 60px)" : "100%")};
   }
 `;

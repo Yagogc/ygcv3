@@ -1,11 +1,14 @@
 import React from "react";
 import styled, { keyframes } from "react-emotion";
+import Container from "./../styles/Container";
 
 const Loader = () => {
   return (
-    <Wrapper>
-      <Spinner />
-    </Wrapper>
+    <Container>
+      <Wrapper>
+        <Spinner />
+      </Wrapper>
+    </Container>
   );
 };
 

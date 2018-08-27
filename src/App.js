@@ -21,7 +21,7 @@ class App extends Component {
             <GoogleAnalytics>
               <ScrollToTop>
                 <Header />
-                <Container>
+                <Container main>
                   <Routes />
                 </Container>
                 <Mobile>

@@ -3,6 +3,7 @@ import styled from "react-emotion";
 import { Link as LinkC, withRouter } from "react-router-dom";
 import Icon from "../styles/Icon";
 import posed from "react-pose";
+import { Home, Work, Skills, Portfolio } from "../Routes";
 
 const isActive = (path, currentPath) =>
   path === currentPath ? "true" : undefined;
@@ -13,19 +14,31 @@ const Navigation = props => {
 
   return (
     <Wrapper initialPose={mobile ? "exit" : "enter"} pose="enter">
-      <Link to="/" current={isActive("/", pathname)}>
+      <Link onMouseOver={Home.preload} to="/" current={isActive("/", pathname)}>
         <Icon icon="user-circle" />
         <LinkTitle>Home</LinkTitle>
       </Link>
-      <Link to="/skills" current={isActive("/skills", pathname)}>
+      <Link
+        onMouseOver={Skills.preload}
+        to="/skills"
+        current={isActive("/skills", pathname)}
+      >
         <Icon icon="code" />
         <LinkTitle>Skills</LinkTitle>
       </Link>
-      <Link to="/work" current={isActive("/work", pathname)}>
+      <Link
+        onMouseOver={Work.preload}
+        to="/work"
+        current={isActive("/work", pathname)}
+      >
         <Icon icon="briefcase" />
         <LinkTitle>Work</LinkTitle>
       </Link>
-      <Link to="/portfolio" current={isActive("/portfolio", pathname)}>
+      <Link
+        onMouseOver={Portfolio.preload}
+        to="/portfolio"
+        current={isActive("/portfolio", pathname)}
+      >
         <Icon icon="folder" />
         <LinkTitle>Portfolio</LinkTitle>
       </Link>

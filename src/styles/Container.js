@@ -10,7 +10,8 @@ export default Container;
 
 const Wrapper = styled.div`
   width: 100%;
-  height: ${({ main }) => (main ? "calc(100vh - 120px)" : "100%")};
+  min-height: ${({ main }) => (main ? "calc(100vh - 120px)" : "100%")};
+  height: 100%;
   margin: 0 auto;
   max-width: ${props => props.theme.container.width};
   padding-left: ${props =>

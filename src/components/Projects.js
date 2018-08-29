@@ -4,8 +4,7 @@ import Grid from "./../styles/Grid";
 import { Card } from "../styles/CardProject";
 import styled from "react-emotion";
 import Icon from "./../styles/Icon";
-import anime from "animejs";
-import { Flipper, Flipped } from "react-flip-toolkit";
+import posed, { PoseGroup } from "react-pose";
 export default class Projects extends Component {
   state = {
     filterByProfesional: [],
@@ -58,28 +57,6 @@ export default class Projects extends Component {
     }
   };
 
-  onElementAppear = (el, index) => {
-    anime({
-      targets: el,
-      opacity: [0, 1],
-      scale: [0, 1],
-      delay: index * 20,
-      duration: 150,
-      easing: "linear"
-    });
-  };
-
-  onElementExit = (el, index, removeElement) => {
-    anime({
-      targets: el,
-      opacity: 0,
-      scale: 0,
-      duration: 150,
-      complete: removeElement,
-      delay: index * 20,
-      easing: "linear"
-    });
-  };
   render() {
     return (
       <Grid dColumns="1">
@@ -120,16 +97,10 @@ export default class Projects extends Component {
             </Label>
           </ButtonGroup>
         </Toggle>
-        <FlipperWrapper dColumns="2" flipKey={this.state.type}>
-          {this.state.filtered.map((project, i) => (
-            <Flipped
-              flipId={project.id.toString()}
-              key={project.id}
-              onDelayedAppear={this.onElementAppear}
-              onExit={this.onElementExit}
-              delay={i * 3}
-            >
-              <Card.Wrapper>
+        <CardWrapper dColumns="2">
+          <PoseGroup>
+            {this.state.filtered.map((project, i) => (
+              <CardProject key={project.id}>
                 {project.name ? (
                   <Card.Title>{project.name}</Card.Title>
                 ) : (
@@ -171,10 +142,10 @@ export default class Projects extends Component {
                     return <Card.SkillItem key={i}>{skill}</Card.SkillItem>;
                   })}
                 </Card.SkillList>
-              </Card.Wrapper>
-            </Flipped>
-          ))}
-        </FlipperWrapper>
+              </CardProject>
+            ))}
+          </PoseGroup>
+        </CardWrapper>
       </Grid>
     );
   }
@@ -216,7 +187,7 @@ const Input = styled.input`
     cursor: progress;
   }
 `;
-const FlipperWrapper = styled(Flipper)`
+const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(${props =>
     props.mColumns ? props.mColumns : "1"}, 1fr);
@@ -226,3 +197,20 @@ const FlipperWrapper = styled(Flipper)`
     grid-template-columns: repeat(${props =>
       props.dColumns ? props.dColumns : "1"}, 1fr)
 `;
+
+const CardProject = posed(Card.Wrapper)({
+  enter: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      ease: "easeInOut"
+    }
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.5,
+    transition: {
+      ease: "easeInOut"
+    }
+  }
+});

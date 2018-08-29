@@ -1,46 +1,35 @@
 import React, { Component } from "react";
 import styled from "react-emotion";
-import Flippy, { FrontSide, BackSide } from "react-flippy";
+import posed, { PoseGroup } from "react-pose";
 
 import logo from "../assets/logo@2x.png";
 import qr from "../assets/qr.svg";
 import IconLogo from "../assets/Icon";
 import Icon from "../styles/Icon";
+
 export default class Logo extends Component {
   state = {
-    toggle: false
+    toggle: true
   };
 
   toggle = toggle => {
-    if (this.state.toggle !== toggle) {
-      //return;
-    }
-    this.setState(
-      {
-        toggle: !toggle
-      },
-      () => {
-        this.flippy.toggle();
-      }
-    );
+    this.setState({
+      toggle: toggle
+    });
   };
 
   render() {
     return (
       <Wrapper>
-        <Flippy
-          flipOnHover={false}
-          flipOnClick={true}
-          flipDirection="horizontal"
-          ref={r => (this.flippy = r)}
-        >
-          <FrontSide style={{ boxShadow: "none" }}>
-            <LogoImg src={logo} alt="Logo" />
-          </FrontSide>
-          <BackSide style={{ boxShadow: "none" }}>
-            <LogoImg src={qr} alt="Logo" />
-          </BackSide>
-        </Flippy>
+        <ImgWrapper>
+          <PoseGroup>
+            {this.state.toggle ? (
+              <LogoI src={logo} alt="Logo" key="logo" />
+            ) : (
+              <QR src={qr} alt="QR" key="qr" />
+            )}
+          </PoseGroup>
+        </ImgWrapper>
         <Toggle>
           <ButtonGroup>
             <Input
@@ -49,7 +38,7 @@ export default class Logo extends Component {
               name="logo"
               defaultChecked
               onClick={() => this.toggle(true)}
-              disabled={this.state.toggle === false}
+              disabled={this.state.toggle === true}
             />
             <Label htmlFor="logo">
               <ImgLogo>
@@ -62,7 +51,7 @@ export default class Logo extends Component {
               id="qr"
               name="logo"
               onClick={() => this.toggle(false)}
-              disabled={this.state.toggle === true}
+              disabled={this.state.toggle === false}
             />
             <Label htmlFor="qr">
               <Icon icon="qrcode" />
@@ -120,3 +109,51 @@ const ImgLogo = styled.span`
   vertical-align: -0.125em;
   display: flex;
 `;
+
+const ImgWrapper = styled.div`
+  perspective: 300px;
+`;
+
+const LogoI = posed(LogoImg)({
+  enter: {
+    rotateY: "0deg",
+    delay: 200,
+    transition: {
+      default: () => ({
+        duration: 200,
+        ease: "easeInOut"
+      })
+    }
+  },
+  exit: {
+    rotateY: "90deg",
+    transition: {
+      default: () => ({
+        duration: 200,
+        ease: "easeInOut"
+      })
+    }
+  }
+});
+
+const QR = posed(LogoImg)({
+  enter: {
+    rotateY: "0deg",
+    delay: 200,
+    transition: {
+      default: () => ({
+        duration: 200,
+        ease: "easeInOut"
+      })
+    }
+  },
+  exit: {
+    rotateY: "-90deg",
+    transition: {
+      default: () => ({
+        duration: 200,
+        ease: "easeInOut"
+      })
+    }
+  }
+});

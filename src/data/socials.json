@@ -1,11 +1,11 @@
 [{
   "name": "Github",
-  "url": "//http://github.yagogc.com",
+  "url": "http://github.yagogc.com",
   "icon": "github-alt",
   "color": "github"
 }, {
   "name": "LinkedIn",
-  "url": "//http://linkedin.yagogc.com",
+  "url": "http://linkedin.yagogc.com",
   "icon": "linkedin-in",
   "color": "linkedin"
 }, {

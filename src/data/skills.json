@@ -14,13 +14,13 @@
     "name": "JavaScript",
     "icon": "js",
     "iconType": "fab",
-    "skills": ["ES6", "jQuery", "Unit Testing", "Jest", "Jasmine", "E2E Testing", "Cypress"]
+    "skills": ["ES6", "jQuery", "Unit Testing", "Jest", "Jasmine", "E2E Testing", "Cypress", "Puppeteer"]
   },
   {
     "name": "React",
     "icon": "react",
     "iconType": "fab",
-    "skills": ["Redux", "React Router", "Emotion", "Styled Components", "Radium"]
+    "skills": ["Redux", "Redux", "Redux Thunk", "Reselect", "React Router", "Reach Router", "Emotion", "Styled Components", "Radium", "React Testing Library", "React Pose", "React Spring", "Storybook"]
   },
   {
     "name": "Tools",

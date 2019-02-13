@@ -41,7 +41,7 @@ const Home = () => {
               +44 7490 303306
             </CardData>
             <CardData padded icon="door-open">
-              Available for new roles
+              Open to new roles
             </CardData>
           </Data>
         </Grid>

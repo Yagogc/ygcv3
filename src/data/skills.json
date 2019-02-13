@@ -20,7 +20,7 @@
     "name": "React",
     "icon": "react",
     "iconType": "fab",
-    "skills": ["Redux", "Redux", "Redux Thunk", "Reselect", "React Router", "Reach Router", "Emotion", "Styled Components", "Radium", "React Testing Library", "React Pose", "React Spring", "Storybook"]
+    "skills": ["Redux", "Redux Thunk", "Reselect", "React Router", "Reach Router", "Emotion", "Styled Components", "Radium", "React Testing Library", "React Pose", "React Spring", "Storybook"]
   },
   {
     "name": "Tools",

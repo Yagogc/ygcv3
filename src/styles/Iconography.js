@@ -33,7 +33,8 @@ import {
   faQrcode,
   faImage,
   faGripVertical,
-  faExclamationTriangle
+  faExclamationTriangle,
+  faDoorOpen
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faFacebook,
@@ -89,7 +90,8 @@ const Iconography = () => {
     faQrcode,
     faImage,
     faGripVertical,
-    faExclamationTriangle
+    faExclamationTriangle,
+    faDoorOpen
   );
 };
 

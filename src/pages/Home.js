@@ -21,8 +21,8 @@ const Home = () => {
                 My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
                 specialized in React and CSS. I'm really passionate about UI
                 design, design systems, responsive design, animations and
-                CSS-in-JS. In fact, anything related in some way to CSS I'll be
-                really interested in.
+                CSS-in-JS. I’d be really interested in anything related to CSS
+                in any way.
               </Introduction>
               <Introduction>
                 I'm also interested in the latest technologies and advances in
@@ -40,8 +40,8 @@ const Home = () => {
             <CardData padded icon="phone" url="tel:+447490303306">
               +44 7490 303306
             </CardData>
-            <CardData padded icon="ban">
-              Not available for roles
+            <CardData padded icon="door-open">
+              Available for new roles
             </CardData>
           </Data>
         </Grid>

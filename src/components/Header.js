@@ -32,10 +32,7 @@ const Header = () => {
           <Desktop>
             <Navigation />
           </Desktop>
-          <Button
-            href="https://yagogc.github.io/_public/CV_YagoGonzalez.pdf"
-            onClick={() => GADownload("CV")}
-          >
+          <Button href="https://cv.yago.dev" onClick={() => GADownload("CV")}>
             <Icon icon="file-pdf" />
             <span>CV</span>
           </Button>

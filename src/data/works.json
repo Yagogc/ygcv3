@@ -1,11 +1,13 @@
-[{
+[
+  {
     "company": "Sainsbury's",
     "companyUrl": "https://www.sainsburys.co.uk/",
-    "role": "Front End Developer",
+    "role": "Software Engineer",
     "startDate": "06/2018",
     "endDate": "",
     "isCurrent": true,
-    "description": "Working and delivering a wide range of projects, using the latest technologies and ensuring the best practices through all the process. Also giving support through Amazon Web Services and creating APIs with Serverless and AWS Lambda.",
+    "description":
+      "Working in an Agile team delivering a wide range of projects. As part of the Frontend team, I focused on developing React web applications, with high emphasis on performance and user experience. In order to achieve this, I have implemented a variety of technologies, tools and services that have fulfilled those expectations and in many ways have lowered the cost and improved substantially the development experience, thus increasing the work delivery. In addition, I have worked closely with Backend and Cloud team not only to expand my knowledge in those areas, but also to apply solutions that improve my projects overall. Last but not least, I have been an integral part of interview processes to expand my current team and the mentoring process for our graduates.",
     "techs": [
       "HTML5",
       "CSS3",
@@ -28,7 +30,8 @@
     "startDate": "01/2018",
     "endDate": "05/2018",
     "isCurrent": false,
-    "description": "In charge of developing a new platform for the UK TV Broadcasters and Advertisement Media Outlets, implementing a modern front end setup, and designing and maintaining a comprehensive style guide for the project.",
+    "description":
+      "In charge of developing a new platform for the UK TV Broadcasters and Advertisement Media Outlets, implementing a modern front end setup, and designing and maintaining a comprehensive style guide for the project.",
     "techs": [
       "HTML5",
       "CSS3",
@@ -51,7 +54,8 @@
     "startDate": "10/2016",
     "endDate": "01/2018",
     "isCurrent": false,
-    "description": "Developed and supported the main website with special focus in the checkout user journey using high standards of performance, responsiveness and accessibility. Created several internal tools to improve the efficiency of other departments’ workflows. Additionally I was responsible for the development of the email templates.",
+    "description":
+      "Developed and supported the main website with special focus in the checkout user journey using high standards of performance, responsiveness and accessibility. Created several internal tools to improve the efficiency of other departments’ workflows. Additionally I was responsible for the development of the email templates.",
     "techs": [
       "HTML5",
       "CSS3",
@@ -75,7 +79,8 @@
     "startDate": "06/2016",
     "endDate": "10/2016",
     "isCurrent": false,
-    "description": "Developed and supported legacy Wordpress theme designs. Worked alongside the design team to create mockups and implement them afterwards.",
+    "description":
+      "Developed and supported legacy Wordpress theme designs. Worked alongside the design team to create mockups and implement them afterwards.",
     "techs": [
       "HTML5",
       "CSS3",
@@ -100,14 +105,7 @@
     "endDate": "03/2016",
     "isCurrent": false,
     "description": "",
-    "techs": [
-      "HTML5",
-      "CSS3",
-      "Javascript",
-      "jQuery",
-      "Bootstrap",
-      "SVGs"
-    ]
+    "techs": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "SVGs"]
   },
   {
     "company": "MyMoneyPlatform",
@@ -116,14 +114,8 @@
     "startDate": "09/2015",
     "endDate": "12/2015",
     "isCurrent": false,
-    "description": "Developed and supported the main web application alongside the front end team, focusing on the overall design and paying special attention to the responsive design for mobile devices.",
-    "techs": [
-      "HTML5",
-      "CSS3",
-      "Javascript",
-      "jQuery",
-      "Bootstrap",
-      "Wordpress"
-    ]
+    "description":
+      "Developed and supported the main web application alongside the front end team, focusing on the overall design and paying special attention to the responsive design for mobile devices.",
+    "techs": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Wordpress"]
   }
 ]

@@ -1,37 +1,106 @@
-[{
+[
+  {
     "name": "HTML",
     "icon": "html5",
     "iconType": "fab",
-    "skills": ["HTML5", "Semantic", "Accessibility", "ARIA", "Responsive Web Design"]
+    "skills": [
+      "HTML5",
+      "Semantic",
+      "Accessibility",
+      "ARIA",
+      "Responsive Web Design"
+    ]
   },
   {
     "name": "CSS",
     "icon": "css3-alt",
     "iconType": "fab",
-    "skills": ["CSS3", "Sass", "BEM", "OOCSS", "SMACSS", "Flexbox", "CSS Grid", "PostCSS", "Bootstrap", "Foundation"]
+    "skills": [
+      "CSS3",
+      "Sass",
+      "BEM",
+      "OOCSS",
+      "SMACSS",
+      "Flexbox",
+      "CSS Grid",
+      "PostCSS",
+      "Bootstrap",
+      "Foundation"
+    ]
   },
   {
     "name": "JavaScript",
     "icon": "js",
     "iconType": "fab",
-    "skills": ["ES6", "jQuery", "Unit Testing", "Jest", "Jasmine", "E2E Testing", "Cypress", "Puppeteer"]
+    "skills": [
+      "ES6",
+      "jQuery",
+      "GraphQL",
+      "Unit Testing",
+      "Jest",
+      "Jasmine",
+      "E2E Testing",
+      "Cypress",
+      "Puppeteer"
+    ]
   },
   {
     "name": "React",
     "icon": "react",
     "iconType": "fab",
-    "skills": ["Redux", "Redux Thunk", "Reselect", "React Router", "Reach Router", "Emotion", "Styled Components", "Radium", "React Testing Library", "React Pose", "React Spring", "Storybook"]
+    "skills": [
+      "Redux",
+      "Redux Thunk",
+      "Apollo Client",
+      "Urql",
+      "Reselect",
+      "React Router",
+      "Reach Router",
+      "Emotion",
+      "Styled Components",
+      "Radium",
+      "React Testing Library",
+      "Enzyme",
+      "Framer Motion",
+      "React Pose",
+      "React Spring",
+      "Storybook"
+    ]
   },
   {
     "name": "Tools",
     "icon": "toolbox",
     "iconType": "fal",
-    "skills": ["GIT", "Webpack", "Parcel", "Grunt", "Gulp", "Sketch", "Figma", "Zeplin", "Balsamiq", "Adobe Photoshop", "Adobe XD", "Adobe Target", "Vagrant", "Docker", "Google Analytics"]
+    "skills": [
+      "GIT",
+      "Webpack",
+      "Parcel",
+      "Grunt",
+      "Gulp",
+      "Sketch",
+      "Figma",
+      "Zeplin",
+      "Balsamiq",
+      "Adobe Photoshop",
+      "Adobe XD",
+      "Adobe Target",
+      "Google Analytics"
+    ]
   },
   {
     "name": "Misc",
     "icon": "cogs",
     "iconType": "fal",
-    "skills": ["UI Design", "UX Design", "Wireframing", "Agile", "Scrum", "Kanban", "TDD", "BDD", "A/B Testing"]
+    "skills": [
+      "UI Design",
+      "UX Design",
+      "Wireframing",
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "TDD",
+      "BDD",
+      "A/B Testing"
+    ]
   }
 ]

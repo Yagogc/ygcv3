@@ -19,10 +19,14 @@ const Home = () => {
             <Info>
               <Introduction>
                 My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
-                specialized in React and CSS. I'm really passionate about UI
+                specialized in React and CSS. I’m really passionate about UI
                 design, design systems, responsive design, animations and
-                CSS-in-JS. I’d be really interested in anything related to CSS
-                in any way.
+                CSS-in-JS. I’d be really interested in anything related to
+                improve the web UI and make it look and feel as an app.
+              </Introduction>
+              <Introduction>
+                I’m really keen into tooling and other ways to leverage, as much
+                as possible, the automation of the workflow.
               </Introduction>
               <Introduction>
                 I'm also interested in the latest technologies and advances in
@@ -31,8 +35,8 @@ const Home = () => {
             </Info>
           </CardHome>
           <Data>
-            <CardData padded icon="at" url="mailto:info@yagogc.com">
-              info@yagogc.com
+            <CardData padded icon="at" url="mailto:info@yago.dev">
+              info@yago.dev
             </CardData>
             <CardData padded icon="map-marker-alt">
               London

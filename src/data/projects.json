@@ -1,11 +1,136 @@
-[{
+[
+  {
+    "name": "Sainsbury's Homepage",
+    "company": "Sainsbury's",
+    "description": "",
+    "img": "homepage.jpg",
+    "link": "https://www.sainsburys.co.uk/",
+    "git": "",
+    "skills": [
+      "React",
+      "Gatsby",
+      "Typescript",
+      "NodeJs",
+      "Serverless",
+      "Jest",
+      "Enzyme",
+      "Styled Components",
+      "Headless CMS",
+      "TestCafe"
+    ]
+  },
+  {
+    "name": "",
+    "company": "Sainsbury's",
+    "description": "",
+    "img": "ndasainsburys.jpg",
+    "link": "",
+    "git": "",
+    "skills": [
+      "React",
+      "Redux",
+      "Typescript",
+      "NodeJs",
+      "Serverless",
+      "GraphQL",
+      "Apollo Client",
+      "Apollo Server",
+      "Jest",
+      "React Testing Library",
+      "Styled Components",
+      "Framer Motion"
+    ]
+  },
+  {
+    "name": "Our Community Hub",
+    "company": "Sainsbury's",
+    "description": "",
+    "img": "ourcommunityhub.jpg",
+    "link": "",
+    "git": "",
+    "skills": [
+      "React",
+      "Redux",
+      "Jest",
+      "Enzyme",
+      "Styled Components",
+      "Typescript",
+      "Puppeteer",
+      "NodeJs",
+      "Serverless",
+      "Headless CMS"
+    ]
+  },
+  {
+    "name": "Lettuce Know",
+    "company": "Sainsbury's",
+    "description": "",
+    "img": "lettuceknow.jpg",
+    "link": "",
+    "git": "",
+    "skills": [
+      "React",
+      "Gatsby",
+      "Jest",
+      "React Testing Libary",
+      "Styled Components",
+      "NodeJs",
+      "Serverless",
+      "AWS",
+      "ES6",
+      "Git"
+    ]
+  },
+  {
     "name": "Active Kids 2018",
     "company": "Sainsbury's",
     "description": "",
-    "img": "activekids.png",
+    "img": "activekids.jpg",
     "link": "https://activekids.sainsburys.co.uk/",
     "git": "",
-    "skills": ["React", "Redux", "Jest", "Enzyme", "HTML5", "CSS3", "SASS", "Javascript", "ES6", "Git", "Webpack"]
+    "skills": [
+      "React",
+      "Redux",
+      "Jest",
+      "Enzyme",
+      "HTML5",
+      "CSS3",
+      "SASS",
+      "Javascript",
+      "ES6",
+      "Git",
+      "Webpack"
+    ]
+  },
+  {
+    "name": "Privacy Hub",
+    "company": "Sainsbury's",
+    "description": "",
+    "img": "privacyhub.jpg",
+    "link": "https://privacy-hub.sainsburys.co.uk/",
+    "git": "",
+    "skills": [
+      "React",
+      "Redux",
+      "Jest",
+      "Enzyme",
+      "HTML5",
+      "CSS3",
+      "SASS",
+      "Javascript",
+      "ES6",
+      "Git",
+      "Webpack"
+    ]
+  },
+  {
+    "name": "XIV Jobs Rank",
+    "company": "",
+    "description": "",
+    "img": "xivjobs.jpg",
+    "link": "https://xiv.yago.pw/",
+    "git": "https://github.com/Yagogc/xivjobs",
+    "skills": ["React", "Typescript", "React DnD", "Styled Components"]
   },
   {
     "name": "My Personal Website V3",
@@ -14,103 +139,221 @@
     "img": "ygcv3.jpg",
     "link": "https://v3.yagogc.com/",
     "git": "https://github.com/Yagogc/ygcv3",
-    "skills": ["React", "React Router", "React Pose", "React Loadable", "Emotion", "Font Awesome", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+    "skills": [
+      "React",
+      "React Router",
+      "React Pose",
+      "React Loadable",
+      "Emotion",
+      "Font Awesome",
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "ES6",
+      "Git",
+      "Webpack"
+    ]
   },
   {
     "name": "React Calc",
     "company": "",
     "description": "",
-    "img": "calc.png",
+    "img": "calc.jpg",
     "link": "https://calc.yagogc.com/",
     "git": "https://github.com/Yagogc/react-calc",
-    "skills": ["React", "Styled Components", "Jest", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+    "skills": [
+      "React",
+      "Styled Components",
+      "Jest",
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "ES6",
+      "Git",
+      "Webpack"
+    ]
   },
   {
     "name": "Catch of the Day",
     "company": "",
     "description": "",
-    "img": "cotd.png",
+    "img": "cotd.jpg",
     "link": "https://catchoftheday.yagogc.com/",
     "git": "https://github.com/Yagogc/catch-of-the-day",
-    "skills": ["React", "Styled Components", "Firebase", "OAuth", "APIs", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+    "skills": [
+      "React",
+      "Styled Components",
+      "Firebase",
+      "OAuth",
+      "APIs",
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "ES6",
+      "Git",
+      "Webpack"
+    ]
   },
   {
     "name": "Murray Dinner",
     "company": "",
     "description": "",
-    "img": "murraydinner.png",
+    "img": "murraydinner.jpg",
     "link": "https://murraydinner.yagogc.com/",
     "git": "https://github.com/Yagogc/murraydinner",
-    "skills": ["React", "Styled Components", "CSS Grid", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+    "skills": [
+      "React",
+      "Styled Components",
+      "CSS Grid",
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "ES6",
+      "Git",
+      "Webpack"
+    ]
   },
   {
     "name": "FilmDB",
     "company": "",
     "description": "",
-    "img": "filmdb.png",
+    "img": "filmdb.jpg",
     "link": "https://filmdb.yagogc.com/",
     "git": "https://github.com/Yagogc/filmdb",
-    "skills": ["React", "Styled Components", "HTML5", "CSS3", "Javascript", "ES6", "Git", "Webpack"]
+    "skills": [
+      "React",
+      "Styled Components",
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "ES6",
+      "Git",
+      "Webpack"
+    ]
   },
   {
     "name": "Harrods",
     "company": "Harrods",
     "description": "",
-    "img": "harrods.png",
+    "img": "harrods.jpg",
     "link": "https://www.harrods.com",
     "git": "",
-    "skills": ["HTML5", "CSS3", "Sass", "Javascript", "ES6", "jQuery", "Git", "Bitbucket", "Grunt", "Gulp", "Agile", "Scrum"]
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "Sass",
+      "Javascript",
+      "ES6",
+      "jQuery",
+      "Git",
+      "Bitbucket",
+      "Grunt",
+      "Gulp",
+      "Agile",
+      "Scrum"
+    ]
   },
   {
     "name": "",
     "company": "Harrods",
     "description": "",
-    "img": "ndaharrods.png",
+    "img": "ndaharrods.jpg",
     "link": "",
     "git": "",
-    "skills": ["HTML5", "CSS3", "Sass", "Javascript", "ES6", "jQuery", "Git", "Bitbucket", "Webpack", "Gulp", "Agile", "Scrum"]
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "Sass",
+      "Javascript",
+      "ES6",
+      "jQuery",
+      "Git",
+      "Bitbucket",
+      "Webpack",
+      "Gulp",
+      "Agile",
+      "Scrum"
+    ]
   },
   {
     "name": "GitBattle",
     "company": "",
     "description": "",
-    "img": "gitbattle.png",
+    "img": "gitbattle.jpg",
     "link": "https://yagogc.github.io/gitbattle",
     "git": "https://github.com/Yagogc/gitbattle",
-    "skills": ["React", "HTML5", "CSS3", "Javascript", "Bootstrap", "APIs", "Git", "Webpack"]
+    "skills": [
+      "React",
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "Bootstrap",
+      "APIs",
+      "Git",
+      "Webpack"
+    ]
   },
   {
     "name": "ChelseaFan12",
     "company": "PentaTechnology",
     "description": "",
-    "img": "cfan12.png",
+    "img": "cfan12.jpg",
     "link": "https://www.chelseafan12.com/",
     "git": "",
-    "skills": ["HTML5", "CSS3", "Sass", "Bootstrap", "Javascript", "jQuery", "Git", "Bitbucket", "Grunt", "Vagrant", "Agile", "Kanban"]
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "Sass",
+      "Bootstrap",
+      "Javascript",
+      "jQuery",
+      "Git",
+      "Bitbucket",
+      "Grunt",
+      "Vagrant",
+      "Agile",
+      "Kanban"
+    ]
   },
   {
     "name": "Hotel Ardora",
     "company": "Ardora",
     "description": "",
-    "img": "ardora.png",
+    "img": "ardora.jpg",
     "link": "https://www.ardora.es/",
     "git": "",
-    "skills": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Git", "SVGs"]
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "jQuery",
+      "Bootstrap",
+      "Git",
+      "SVGs"
+    ]
   },
   {
     "name": "My Money Platform",
     "company": "My Money Platform",
     "description": "",
-    "img": "mmp.png",
+    "img": "mmp.jpg",
     "link": "https://www.mymoneyplatform.com/",
     "git": "",
-    "skills": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Git", "Wordpress"]
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "jQuery",
+      "Bootstrap",
+      "Git",
+      "Wordpress"
+    ]
   },
   {
     "name": "My Personal Website",
     "company": "",
     "description": "",
-    "img": "ygc.png",
+    "img": "ygc.jpg",
     "link": "https://v1.yago.pw/",
     "git": "https://github.com/Yagogc/ygc",
     "skills": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Git"]

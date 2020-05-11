@@ -2,12 +2,45 @@
   {
     "company": "Sainsbury's",
     "companyUrl": "https://www.sainsburys.co.uk/",
-    "role": "Software Engineer",
+    "role": "Senior Software Engineer",
     "startDate": "06/2018",
     "endDate": "",
     "isCurrent": true,
-    "description":
-      "Working in an Agile team delivering a wide range of projects. As part of the Frontend team, I focused on developing React web applications, with high emphasis on performance and user experience. In order to achieve this, I have implemented a variety of technologies, tools and services that have fulfilled those expectations and in many ways have lowered the cost and improved substantially the development experience, thus increasing the work delivery. In addition, I have worked closely with Backend and Cloud team not only to expand my knowledge in those areas, but also to apply solutions that improve my projects overall. Last but not least, I have been an integral part of interview processes to expand my current team and the mentoring process for our graduates.",
+    "description": [
+      "As Front End Tech Lead of one of the teams in the marketing family, I’m responsible for shaping the direction of the Front End architecture of the products from inception to delivery with particular attention to the React landscape to improve the performance of the sites, reduce error rates and improve accessibility; with particular focus on tooling to increase automation and the developer experience in order to deliver more, faster and safer.",
+      "As part of the leadership team of the family, I’m particularly involved in the interview process and in the community of practices, where I’m really active by collaborating, sharing and reaching out to other colleagues and teams."
+    ],
+    "techs": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "ES6",
+      "TypeScript",
+      "React",
+      "Redux",
+      "GraphQL",
+      "Styled Components",
+      "Serveless",
+      "Lambda",
+      "Webpack",
+      "Git",
+      "Agile"
+    ]
+  },
+  {
+    "company": "Sainsbury's",
+    "companyUrl": "https://www.sainsburys.co.uk/",
+    "role": "Software Engineer",
+    "startDate": "06/2018",
+    "endDate": "10/2019",
+    "isCurrent": false,
+    "description": [
+      "Worked in an Agile team delivering a wide range of projects. As part of the Front End team, I focused on developing React web applications, with a high emphasis on performance and user experience. In order to achieve this, I have implemented a variety of technologies, tools, and services that have fulfilled those expectations and in many ways have lowered the cost and improved substantially the development experience, thus increasing the work delivery.",
+
+      "In addition, I have worked closely with the Back End and Cloud team not only to expand my knowledge in those areas but also to apply solutions that improve my projects overall.",
+
+      "Last but not least, I have been an integral part of the interview processes to expand my current team and the mentoring process for our graduates."
+    ],
     "techs": [
       "HTML5",
       "CSS3",
@@ -32,8 +65,9 @@
     "startDate": "01/2018",
     "endDate": "05/2018",
     "isCurrent": false,
-    "description":
-      "In charge of developing a new platform for the UK TV Broadcasters and Advertisement Media Outlets, implementing a modern front end setup, and designing and maintaining a comprehensive style guide for the project.",
+    "description": [
+      "In charge of developing a new platform for the UK TV Broadcasters and Advertisement Media Outlets, implementing a modern front end setup, and designing and maintaining a comprehensive style guide for the project."
+    ],
     "techs": [
       "HTML5",
       "CSS3",
@@ -56,8 +90,9 @@
     "startDate": "10/2016",
     "endDate": "01/2018",
     "isCurrent": false,
-    "description":
-      "Developed and supported the main website with special focus in the checkout user journey using high standards of performance, responsiveness and accessibility. Created several internal tools to improve the efficiency of other departments’ workflows. Additionally I was responsible for the development of the email templates.",
+    "description": [
+      "Developed and supported the main website with special focus in the checkout user journey using high standards of performance, responsiveness and accessibility. Created several internal tools to improve the efficiency of other departments’ workflows. Additionally I was responsible for the development of the email templates."
+    ],
     "techs": [
       "HTML5",
       "CSS3",
@@ -81,8 +116,9 @@
     "startDate": "06/2016",
     "endDate": "10/2016",
     "isCurrent": false,
-    "description":
-      "Developed and supported legacy Wordpress theme designs. Worked alongside the design team to create mockups and implement them afterwards.",
+    "description": [
+      "Developed and supported legacy Wordpress theme designs. Worked alongside the design team to create mockups and implement them afterwards."
+    ],
     "techs": [
       "HTML5",
       "CSS3",
@@ -106,7 +142,7 @@
     "startDate": "02/2016",
     "endDate": "03/2016",
     "isCurrent": false,
-    "description": "",
+    "description": null,
     "techs": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "SVGs"]
   },
   {
@@ -116,8 +152,9 @@
     "startDate": "09/2015",
     "endDate": "12/2015",
     "isCurrent": false,
-    "description":
-      "Developed and supported the main web application alongside the front end team, focusing on the overall design and paying special attention to the responsive design for mobile devices.",
+    "description": [
+      "Developed and supported the main web application alongside the front end team, focusing on the overall design and paying special attention to the responsive design for mobile devices."
+    ],
     "techs": ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "Wordpress"]
   }
 ]

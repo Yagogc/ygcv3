@@ -35,9 +35,10 @@ const Works = () => {
                   {work.isCurrent ? "Present" : work.endDate}
                 </Block.Date>
               </Block.Info>
-              {work.description && (
-                <Block.Description>{work.description}</Block.Description>
-              )}
+              {work.description &&
+                work.description.map(p => (
+                  <Block.Description>{p}</Block.Description>
+                ))}
               <Block.TechList>
                 {work.techs.map((tech, i) => (
                   <Block.TechItem key={i}>{tech}</Block.TechItem>

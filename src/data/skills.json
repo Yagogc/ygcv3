@@ -52,6 +52,9 @@
     "skills": [
       "Redux",
       "Redux Thunk",
+      "Redux Toolkit",
+      "Gatsby",
+      "Next",
       "Apollo Client",
       "Urql",
       "Reselect",
@@ -74,6 +77,10 @@
     "iconType": "fal",
     "skills": [
       "GIT",
+      "CircleCI",
+      "AWS",
+      "Netlify",
+      "Vercel",
       "Webpack",
       "Parcel",
       "Grunt",

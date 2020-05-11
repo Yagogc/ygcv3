@@ -19,18 +19,18 @@ const Home = () => {
             <Info>
               <Introduction>
                 My name is <Name>Yago Gonzalez</Name>, I’m a Front End Developer
-                specialized in React and CSS. I’m really passionate about UI
-                design, design systems, responsive design, animations and
-                CSS-in-JS. I’d be really interested in anything related to
-                improve the web UI and make it look and feel as an app.
+                specialized in React and CSS. I'm really passionate about UI
+                design, design systems, responsive design, animations, and
+                CSS-in-JS. I’d be interested in anything related to improving
+                the web UI and make it look and feel like a native application.
               </Introduction>
               <Introduction>
-                I’m really keen into tooling and other ways to leverage, as much
-                as possible, the automation of the workflow.
+                I’m keen on tooling and other ways to leverage, as much as
+                possible, the automation of the workflow.
               </Introduction>
               <Introduction>
                 I'm also interested in the latest technologies and advances in
-                the front-end field like: SSR, GraphQL or PWAs.
+                the front end field like SSR, GraphQL, or PWAs.
               </Introduction>
             </Info>
           </CardHome>
@@ -88,13 +88,13 @@ const Info = styled.div`
 
 const CardHome = styled.div`
   display: grid;
-  grid-gap: ${props => props.theme.ws.padding};
+  grid-gap: ${(props) => props.theme.ws.padding};
   justify-content: center;
   align-items: center;
-  @media (${props => props.theme.mq.mobile}) {
+  @media (${(props) => props.theme.mq.mobile}) {
     grid-template-rows: auto auto;
   }
-  @media (${props => props.theme.mq.desktop}) {
+  @media (${(props) => props.theme.mq.desktop}) {
     grid-template-columns: 1fr 2fr;
   }
 `;

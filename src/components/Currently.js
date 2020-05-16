@@ -24,7 +24,9 @@ const Currently = () => {
               <Card.Icon icon="dot-circle" mright="true" />
               {work.role}
             </Card.Label>
-            <Card.Description>{work.description}</Card.Description>
+            {work.description.map(p => (
+              <Card.Description>{p}</Card.Description>
+            ))}
             <Card.SkillList>
               {work.techs.map((skill, i) => {
                 return <Card.SkillItem key={i}>{skill}</Card.SkillItem>;
@@ -62,12 +64,14 @@ const Currently = () => {
               <Card.Img src={require(`../assets/portfolio/${project.img}`)} />
               {project.link && (
                 <Card.ImgLink href={project.link}>
-                  <Card.Icon icon="globe" mright="true" />Link
+                  <Card.Icon icon="globe" mright="true" />
+                  Link
                 </Card.ImgLink>
               )}
               {project.git && (
                 <Card.ImgLink href={project.git} git="true">
-                  <Card.Icon icon="github-alt" iconType="fab" mright="true" />Git
+                  <Card.Icon icon="github-alt" iconType="fab" mright="true" />
+                  Git
                 </Card.ImgLink>
               )}
             </Card.WrapperImg>
